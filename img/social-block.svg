@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="114.82141mm"
+   height="30mm"
+   viewBox="0 0 114.82141 30"
    version="1.1"
    id="svg7093"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
@@ -24,14 +24,19 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.3273709"
-     inkscape:cx="190.97902"
-     inkscape:cy="624.91952"
+     inkscape:cx="300.97089"
+     inkscape:cy="17.70417"
      inkscape:window-width="1920"
      inkscape:window-height="1002"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:snap-page="true" />
   <defs
      id="defs7090">
     <filter
@@ -57,18 +62,19 @@
   <g
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(29.10601,-160.59588)">
     <path
        id="path9132"
        style="font-variation-settings:normal;vector-effect:none;fill:#000000;fill-opacity:0.5;fill-rule:evenodd;stroke:none;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter9152);stop-color:#000000"
-       d="m -1.07362,160.59588 -28.03239,28.0324 H 85.7154 v -28.0324 z"
+       d="m -1.07362,162.56348 -28.03239,28.0324 H 85.7154 v -28.0324 z"
        inkscape:export-filename="D:\Web- &amp; Grafikdesign gewerbliche Aufträge\Kundenaufträge\Zeilbeck Metallbau\Website\rect115.png"
        inkscape:export-xdpi="100.01"
        inkscape:export-ydpi="100.01" />
     <path
        id="rect2658"
-       style="font-variation-settings:normal;vector-effect:none;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
-       d="m -1.07362,160.59588 -28.03239,28.0324 H 85.7154 v -28.0324 z"
+       style="font-variation-settings:normal;vector-effect:none;fill:#f2f2f2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       d="m -1.0736209,162.56348 -28.0323901,28.0324 h 114.82141 v -28.0324 z"
        inkscape:export-filename="D:\Web- &amp; Grafikdesign gewerbliche Aufträge\Kundenaufträge\Zeilbeck Metallbau\Website\rect115.png"
        inkscape:export-xdpi="100.01"
        inkscape:export-ydpi="100.01" />

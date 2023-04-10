@@ -7,61 +7,79 @@
     <title>Metallbau Zeilbeck</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--TODO favicon <link rel="icon" type="i" href="favicon.ico"> -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/layout.css">
 </head>
 <body>
-    <section class="main-grid">
+    <section class="main-background">
         <!--header-->
-        <div class="header"></div>
-        <div class="logo">
-            <img id="fz-logo" src="/img/FZ-Logo_WortBildmarke.svg" alt="">
-        </div>
-        <!--<div class="header-gap"></div>-->
-        <div class="navigation">ss</div>
+        <nav class="navbar sticky-top">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/FZ-Logo_WortBildmarke.svg" alt="Zeilbeck Logo">
+            </a>
+            
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                   <li class="nav-item active"><a href="index.html">HOME</a></li>
+                   <li class="nav-item"><a href="#">ÜBER UNS</a></li>
+                   <li class="nav-item"><a href="#">PRODUKTE</a></li>
+                   <li class="nav-item"><a href="#">REFERENZEN</a></li>
+                   <li class="nav-item"><a href="#">JOBS</a></li>
+                </ul>
+            </div>
+        </nav>
+
         <!--main content area-->
-        <div class="img-left"><img src="/img/FZ2.jpg" alt=""></div>
-        <div class="img-left-background"></div>
-        <div class="triangle-left"></div>
-        <div class="img-right"><img src="/img/FZ4.jpg" alt=""></div>
-        <div class="img-right-overlay"></div>
         <div class="teaser-text">
-            <h1>Metall ist unsere Leidenschaft. <br>
-                Wir bringen es in Form.</h1>
-            <p>Wir sind Ihr kompetenter Partner für jegliche Art von Metallbauarbeiten 
-                im Bereich von:</p>
-            <ul>
-                <li>Absturzsicherungen</li>
-                <li>Überdachungen</li>
-                <li>Abtrennungen</li>
-                <li>leichten Stahlkonstruktionen</li>
-                <li>uvm...</li>
-            </ul>
+            <img src="img/teaser-container.svg" alt="">
         </div>
         <!--footer-->
-        <div class="footer">
-            
-        </div>
-        <div class="footer-links">
-            <p id="footer-links" >
-                <a href="#" class="kontakt">Kontakt</a>
-                <a href="#" class="datenschutz">Datenschutz</a>
-                <a href="#" class="impressum">Impressum</a>   
-            </p>                
-       </div>
+        <footer class="footer">
+            <div class="container-fluid">
 
-       <div class="social-symbols">
-           follow us
-       </div>
+                <p class="footer-links" >
+                    <a href="#" class="kontakt">Kontakt</a>
+                    <a href="#" class="datenschutz">Datenschutz</a>
+                    <a href="#" class="impressum">Impressum</a>   
+                </p> 
+                
+                <div class="copyright">
+                    ©2023 Metallbau Zeilbeck | Umsetzung: <a href="www.ladyviolet.github.io" title="Laura Zeilbeck Design">Laura Zeilbeck Webdesign</a>
+                    </div>
 
-       <div class="copyright">
-            ©2023 Metallbau Zeilbeck | Umsetzung: <a href="www.ladyviolet.github.io" title="Laura Zeilbeck Design">Laura Zeilbeck Webdesign</a>
-       </div>
+                    <div class="iso-cert">
+                        <div id="iso-wrapper">
+                            <img id="#isocert-icon" src="img/isocert.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="social-block">
+                        <div id="social-wrapper">
+                            <div class="social-symbols"> 
+                                <img id="follow-us" src="./img/follow-us.svg" alt="">
+                                <img id="facebook-icon" src="./img/facebook-icon.svg" alt="">
+                                <img id="instagram-icon" src="./img/instagram-icon.svg" alt="">
+                            </div>
+                        </div>
+                    </div>    
+             </div>
+          </footer>
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+   
+    <script src="js/main.js"></script>
 </body>
 </html>

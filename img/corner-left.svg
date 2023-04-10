@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="211.29584mm"
-   height="211.29689mm"
-   viewBox="0 0 211.29584 211.29689"
+   width="207.69016mm"
+   height="207.69119mm"
+   viewBox="0 0 207.69016 207.69119"
    version="1.1"
    id="svg287"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
@@ -25,8 +25,8 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.66368547"
-     inkscape:cx="1169.9819"
-     inkscape:cy="377.43782"
+     inkscape:cx="1163.955"
+     inkscape:cy="371.41087"
      inkscape:window-width="1920"
      inkscape:window-height="1002"
      inkscape:window-x="-8"
@@ -72,7 +72,7 @@
        x2="261.32632"
        y2="77.015213"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(-203.49306,242.69097)" />
+       gradientTransform="translate(-201.70077,244.48326)" />
     <linearGradient
        inkscape:collect="always"
        id="linearGradient8195">
@@ -135,7 +135,7 @@
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(203.51786,-242.69097)">
+     transform="translate(201.72557,-244.48326)">
     <path
        id="path7468"
        style="mix-blend-mode:normal;vector-effect:none;fill:#000000;fill-opacity:0.5;fill-rule:evenodd;stroke:none;stroke-width:2.43341;stroke-opacity:1;filter:url(#filter7712);stop-color:#000000"
@@ -157,11 +157,11 @@
        inkscape:export-filename="D:\Web- &amp; Grafikdesign gewerbliche Aufträge\Kundenaufträge\Zeilbeck Metallbau\Website\rect115.png"
        inkscape:export-xdpi="100.01"
        inkscape:export-ydpi="100.01"
-       transform="translate(-203.27763,242.90632)" />
+       transform="translate(-201.70067,244.48328)" />
     <path
        id="path8055"
        style="vector-effect:none;fill:url(#linearGradient8197);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.64384;stop-color:#000000"
-       d="m -203.51786,242.69097 v 207.6912 L 4.1722997,242.69097 Z"
+       d="m -201.72557,244.48326 v 207.6912 L 5.9645849,244.48326 Z"
        inkscape:export-filename="D:\Web- &amp; Grafikdesign gewerbliche Aufträge\Kundenaufträge\Zeilbeck Metallbau\Website\rect115.png"
        inkscape:export-xdpi="100.01"
        inkscape:export-ydpi="100.01" />
