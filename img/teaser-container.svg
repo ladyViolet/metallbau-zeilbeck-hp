@@ -6,7 +6,7 @@
    height="138.0233mm"
    viewBox="0 0 138.02122 138.0233"
    version="1.1"
-   id="svg6329"
+   id="svg9005"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
    sodipodi:docname="teaser-container.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -14,7 +14,7 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
-     id="namedview6331"
+     id="namedview9007"
      pagecolor="#ffffff"
      bordercolor="#999999"
      borderopacity="1"
@@ -23,9 +23,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.66368547"
-     inkscape:cx="1078.0709"
-     inkscape:cy="528.11161"
+     inkscape:zoom="0.93859299"
+     inkscape:cx="621.67521"
+     inkscape:cy="369.1696"
      inkscape:window-width="1920"
      inkscape:window-height="1002"
      inkscape:window-x="-8"
@@ -35,9 +35,27 @@
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-smooth-nodes="true">
+    <sodipodi:guide
+       position="14.041824,94.61169"
+       orientation="1,0"
+       id="guide1005" />
+    <sodipodi:guide
+       position="73.054023,74.437398"
+       orientation="1,0"
+       id="guide1007" />
+    <sodipodi:guide
+       position="121.46602,71.322881"
+       orientation="1,0"
+       id="guide1009" />
+  </sodipodi:namedview>
   <defs
-     id="defs6326">
+     id="defs9002">
     <filter
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
@@ -57,6 +75,19 @@
        width="644.88379"
        height="412.84616"
        id="rect67427" />
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter67465"
+       x="-0.0084930481"
+       y="-0.031950999"
+       width="1.0169861"
+       height="1.063902">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.42736579"
+         id="feGaussianBlur67467" />
+    </filter>
     <rect
        x="-325.45538"
        y="738.30151"
@@ -68,65 +99,110 @@
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(180.23612,-8.7266069)">
+     transform="translate(85.780707,-22.067995)">
     <path
        id="rect36733"
        style="color:#000000;fill:#ffffff;fill-opacity:0.619608;fill-rule:evenodd;stroke-width:1;-inkscape-stroke:none;paint-order:markers stroke fill"
-       d="M -180.23612,8.7266069 V 10.226257 144.93173 h 99.458527 4.242636 l 3.000333,-3.00033 26.501743,-26.50175 2.999817,-2.99981 V 8.7266069 Z m 2.99982,2.9998171 H -47.032881 V 111.18702 L -77.777257,141.9314 H -177.2363 Z"
-       inkscape:export-filename="D:\Web- &amp; Grafikdesign gewerbliche Aufträge\Kundenaufträge\Zeilbeck Metallbau\Website\rect115.png"
-       inkscape:export-xdpi="100.01"
-       inkscape:export-ydpi="100.01" />
+       d="m -85.780707,22.067995 v 1.49965 134.705475 h 99.458524 4.242636 l 3.000333,-3.00034 26.501743,-26.50174 2.999817,-2.99982 V 22.067995 Z m 2.999816,2.999817 h 130.20342 v 99.460598 l -30.744376,30.74437 h -99.459044 z" />
     <path
        id="path42980"
        style="vector-effect:none;fill:#42172a;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.069747;filter:url(#filter43018);stop-color:#000000"
-       d="m -72.34336,144.93363 h 28.31219 v -28.31211 z"
-       sodipodi:nodetypes="cccc"
-       inkscape:export-filename="D:\Web- &amp; Grafikdesign gewerbliche Aufträge\Kundenaufträge\Zeilbeck Metallbau\Website\rect115.png"
-       inkscape:export-xdpi="100.01"
-       inkscape:export-ydpi="100.01" />
+       d="M 22.11205,158.27502 H 50.42424 V 129.96291 Z"
+       sodipodi:nodetypes="cccc" />
     <path
        id="path37388"
        style="vector-effect:none;fill:#bb4077;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.069747;stop-color:#000000"
-       d="m -72.34336,144.93363 h 28.31219 v -28.31211 z"
-       sodipodi:nodetypes="cccc"
-       inkscape:export-filename="D:\Web- &amp; Grafikdesign gewerbliche Aufträge\Kundenaufträge\Zeilbeck Metallbau\Website\rect115.png"
-       inkscape:export-xdpi="100.01"
-       inkscape:export-ydpi="100.01" />
-    <text
-       xml:space="preserve"
-       style="font-size:5.10049px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';font-variant-ligatures:no-common-ligatures;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;white-space:pre;inline-size:110.143;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="53.81879"
-       y="312.54764"
-       id="text71067"
-       transform="matrix(0.96831715,0,0,0.96831715,-218.8675,-213.52182)"
-       inkscape:export-filename="D:\Web- &amp; Grafikdesign gewerbliche Aufträge\Kundenaufträge\Zeilbeck Metallbau\Website\rect115.png"
-       inkscape:export-xdpi="100.01"
-       inkscape:export-ydpi="100.01"><tspan
+       d="M 22.11205,158.27502 H 50.42424 V 129.96291 Z"
+       sodipodi:nodetypes="cccc" />
+    <g
+       id="g12059"
+       transform="translate(0,-2.7143762)">
+      <text
+         xml:space="preserve"
+         transform="matrix(0.60023562,0,0,0.60023562,123.66758,-392.10296)"
+         id="text67425"
+         style="font-size:14.6667px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';font-variant-ligatures:no-common-ligatures;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;white-space:pre;shape-inside:url(#rect67427);mix-blend-mode:normal;fill:#2a2a2a;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter67465)"><tspan
+           x="-325.45508"
+           y="751.31925"
+           id="tspan17217"><tspan
+             style="font-weight:900;font-family:Roboto;-inkscape-font-specification:'Roboto Heavy';stroke:none"
+             id="tspan17215">METALL IST UNSERE 
+</tspan></tspan><tspan
+           x="-325.45508"
+           y="769.83774"
+           id="tspan17221"><tspan
+             style="font-weight:900;font-family:Roboto;-inkscape-font-specification:'Roboto Heavy';stroke:none"
+             id="tspan17219">LEIDENSCHAFT.
+</tspan></tspan><tspan
+           x="-325.45508"
+           y="788.35624"
+           id="tspan17225"><tspan
+             style="font-weight:900;font-family:Roboto;-inkscape-font-specification:'Roboto Heavy';stroke:none"
+             id="tspan17223">WIR BRINGEN ES IN FORM.</tspan></tspan></text>
+      <text
+         xml:space="preserve"
+         transform="matrix(0.60023562,0,0,0.60023562,123.15517,-393.12777)"
+         id="text58617"
+         style="font-size:14.6667px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';font-variant-ligatures:no-common-ligatures;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;white-space:pre;shape-inside:url(#rect58619);fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
+           x="-325.45508"
+           y="751.31925"
+           id="tspan17229"><tspan
+             style="font-weight:900;font-family:Roboto;-inkscape-font-specification:'Roboto Heavy';stroke:none"
+             id="tspan17227">METALL IST UNSERE 
+</tspan></tspan><tspan
+           x="-325.45508"
+           y="769.83774"
+           id="tspan17233"><tspan
+             style="font-weight:900;font-family:Roboto;-inkscape-font-specification:'Roboto Heavy';stroke:none"
+             id="tspan17231">LEIDENSCHAFT.
+</tspan></tspan><tspan
+           x="-325.45508"
+           y="788.35624"
+           id="tspan17237"><tspan
+             style="font-weight:900;font-family:Roboto;-inkscape-font-specification:'Roboto Heavy';stroke:none"
+             id="tspan17235">WIR BRINGEN ES IN FORM.</tspan></tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:5.10049px;line-height:125%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';font-variant-ligatures:no-common-ligatures;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;white-space:pre;inline-size:110.143;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          x="53.81879"
          y="312.54764"
-         id="tspan6742"><tspan
-           style="font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';stroke:none"
-           id="tspan6740">Wir sind Ihr kompetenter Partner für jegliche Art </tspan></tspan><tspan
-         x="53.81879"
-         y="318.9876"
-         id="tspan6746"><tspan
-           style="font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';stroke:none"
-           id="tspan6744">von Metallbauarbeiten im Bereich von 
+         id="text71067"
+         transform="matrix(1.2591672,0,0,1.2591672,-139.83432,-298.9683)"><tspan
+           x="53.81879"
+           y="312.54764"
+           id="tspan17241"><tspan
+             style="font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';stroke:none"
+             id="tspan17239">Wir sind Ihr kompetenter Partner für 
 </tspan></tspan><tspan
-         x="53.81879"
-         y="325.42757"
-         id="tspan6750"><tspan
-           style="font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';stroke:none"
-           id="tspan6748">Absturzsicherungen, Überdachungen, </tspan></tspan><tspan
-         x="53.81879"
-         y="331.86754"
-         id="tspan6754"><tspan
-           style="font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';stroke:none"
-           id="tspan6752">Abtrennungen und leichten Stahlkonstruktionen </tspan></tspan><tspan
-         x="53.81879"
-         y="338.30751"
-         id="tspan6758"><tspan
-           style="font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';stroke:none"
-           id="tspan6756">uvm ...</tspan></tspan></text>
+           x="53.81879"
+           y="318.9876"
+           id="tspan17245"><tspan
+             style="font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';stroke:none"
+             id="tspan17243">jegliche Art von Metallbauarbeiten im 
+</tspan></tspan><tspan
+           x="53.81879"
+           y="325.42757"
+           id="tspan17249"><tspan
+             style="font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';stroke:none"
+             id="tspan17247">Bereich von Absturzsicherungen, 
+</tspan></tspan><tspan
+           x="53.81879"
+           y="331.86754"
+           id="tspan17253"><tspan
+             style="font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';stroke:none"
+             id="tspan17251">Überdachungen, Abtrennungen, 
+</tspan></tspan><tspan
+           x="53.81879"
+           y="338.30751"
+           id="tspan17257"><tspan
+             style="font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';stroke:none"
+             id="tspan17255">leichten Stahlkonstruktionen 
+</tspan></tspan><tspan
+           x="53.81879"
+           y="344.74749"
+           id="tspan17261"><tspan
+             style="font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';stroke:none"
+             id="tspan17259">und vielem mehr.</tspan></tspan></text>
+    </g>
   </g>
 </svg>

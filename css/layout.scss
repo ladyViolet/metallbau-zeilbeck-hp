@@ -16,10 +16,19 @@ font-family: 'Source Sans Pro', sans-serif;*/
 body {
     padding: unset;
     margin: unset;
+    background-color: var(--darkgrey);
     a {
         text-decoration: unset;
         color: unset;
     }
+}
+
+iframe {
+    width: 80vw;
+    height: 100vh;
+    background-color: var(--darkgrey);
+    display: block;
+    margin: 0 auto;
 }
 
 //MAIN BACKGROUND
@@ -32,11 +41,17 @@ body {
     height: 100vh;
 }
 
+//dynamically change content
+.hidden {
+    display: none;
+}
+
 //HEADER
 .navbar {
     height: 100px;
     padding-right: 10px;
     border-radius: unset;
+    margin: unset;
     background-color: var(--transparent_white);
     box-shadow: var(--vertical-dropshadow-down);
     font-weight: 600;
@@ -68,6 +83,10 @@ body {
         }
     }
 
+    .navbar-brand:hover {
+        filter: brightness(.8);
+    }
+
     .icon-bar {
         background-color: var(--telemagenta);
     }
@@ -84,55 +103,31 @@ body {
 }
 
 //MAIN-AREA
-.teaser-text {
-    //background-image: url(../img/teaser-container.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 30vw;
-    z-index: 99;
-    margin: 5% 20%;
-    padding: 1vw 3vw;
-    text-align: left;
-    vertical-align: middle;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
+.home {
+    height: 80vh;
 
-   /* h1 {
-        font-family: 'Roboto', sans-serif;
-        font-size: calc(1vw + 1.5vh);
-        color: var(--transparent_white);
-        text-shadow: 3px 3px 4px rgba(0, 0, 0, .5);
-        text-transform: uppercase;
-        margin: unset;
+    .teaser-text {
+        height: 100%;
+        padding: 5%;
+        z-index: 99;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        img {
+            height: 100%;
+        }
     }
-
-    p {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 1.5vw;
-        color: var(--transparent_white);
-        margin-top: .7em;
-        margin-bottom: .5em;
+    
+    @media only screen and (max-width: 900px) {
+    .teaser-text {
+        padding: 20%;
     }
-
-    ul {
-        list-style: none;
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 1.5vw;
-        color: var(--transparent_white);
-        margin: unset;
-    }
-    //colored bulletpoints
-    ul li::before {
-        content: "\2022";
-        color: var(--telemagenta);
-        font-weight: bold;
-        display: inline-block; 
-        width: 1em;
-        margin-left: -1.5vw;
-      }*/
 }
+}
+
+
+
 
 //FOOTER
 .footer {

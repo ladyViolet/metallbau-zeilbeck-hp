@@ -12,10 +12,19 @@ font-family: 'Source Sans Pro', sans-serif;*/
 body {
   padding: unset;
   margin: unset;
+  background-color: var(--darkgrey);
 }
 body a {
   text-decoration: unset;
   color: unset;
+}
+
+iframe {
+  width: 80vw;
+  height: 100vh;
+  background-color: var(--darkgrey);
+  display: block;
+  margin: 0 auto;
 }
 
 .main-background {
@@ -27,10 +36,15 @@ body a {
   height: 100vh;
 }
 
+.hidden {
+  display: none;
+}
+
 .navbar {
   height: 100px;
   padding-right: 10px;
   border-radius: unset;
+  margin: unset;
   background-color: var(--transparent_white);
   box-shadow: var(--vertical-dropshadow-down);
   font-weight: 600;
@@ -59,6 +73,9 @@ body a {
 .navbar .navbar-brand img {
   height: 100%;
 }
+.navbar .navbar-brand:hover {
+  filter: brightness(0.8);
+}
 .navbar .icon-bar {
   background-color: var(--telemagenta);
 }
@@ -72,52 +89,24 @@ body a {
   background-color: var(--lightgrey);
 }
 
-.teaser-text {
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 30vw;
+.home {
+  height: 80vh;
+}
+.home .teaser-text {
+  height: 100%;
+  padding: 5%;
   z-index: 99;
-  margin: 5% 20%;
-  padding: 1vw 3vw;
-  text-align: left;
-  vertical-align: middle;
   display: flex;
   justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  /* h1 {
-       font-family: 'Roboto', sans-serif;
-       font-size: calc(1vw + 1.5vh);
-       color: var(--transparent_white);
-       text-shadow: 3px 3px 4px rgba(0, 0, 0, .5);
-       text-transform: uppercase;
-       margin: unset;
-   }
-
-   p {
-       font-family: 'Source Sans Pro', sans-serif;
-       font-size: 1.5vw;
-       color: var(--transparent_white);
-       margin-top: .7em;
-       margin-bottom: .5em;
-   }
-
-   ul {
-       list-style: none;
-       font-family: 'Source Sans Pro', sans-serif;
-       font-size: 1.5vw;
-       color: var(--transparent_white);
-       margin: unset;
-   }
-   //colored bulletpoints
-   ul li::before {
-       content: "\2022";
-       color: var(--telemagenta);
-       font-weight: bold;
-       display: inline-block; 
-       width: 1em;
-       margin-left: -1.5vw;
-     }*/
+  align-items: center;
+}
+.home .teaser-text img {
+  height: 100%;
+}
+@media only screen and (max-width: 900px) {
+  .home .teaser-text {
+    padding: 20%;
+  }
 }
 
 .footer {
