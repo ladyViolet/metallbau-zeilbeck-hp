@@ -49,6 +49,7 @@ iframe {
   box-shadow: var(--vertical-dropshadow-down);
   font-weight: 600;
   color: var(--lightgrey) !important;
+  z-index: 1000;
 }
 .navbar .nav-item a {
   height: 100px;
@@ -84,9 +85,17 @@ iframe {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
   height: 40px;
   top: 20%;
+  z-index: 1100;
 }
 .navbar .navbar-toggle:hover {
   background-color: var(--lightgrey);
+}
+.navbar .in {
+  position: absolute;
+  right: 0;
+  padding-top: 70px;
+  background-color: var(--transparent_white);
+  height: 100vh;
 }
 
 .home {
