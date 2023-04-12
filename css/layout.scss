@@ -105,14 +105,15 @@ iframe {
 //MAIN-AREA
 .home {
     height: 80vh;
+    position: relative;
 
     .teaser-text {
-        height: 100%;
-        padding: 5%;
+        height: 70%;
         z-index: 99;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        left: 30%;
+        top: 50%;
+        transform: translate(-30%, -50%);
+        position: absolute;
         
         img {
             height: 100%;
@@ -121,7 +122,9 @@ iframe {
     
     @media only screen and (max-width: 900px) {
     .teaser-text {
-        padding: 20%;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -40%);
     }
 }
 }
