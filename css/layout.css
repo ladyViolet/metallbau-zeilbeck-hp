@@ -168,6 +168,14 @@ iframe {
   width: fit-content;
   z-index: 99;
 }
+.footer .social-block .expandOnSmall {
+  position: unset;
+  bottom: unset;
+  right: unset;
+  width: 100vw;
+  background-color: white;
+  z-index: 1000 !important;
+}
 .footer .social-block #social-wrapper {
   background-image: url("../img/social-block.svg");
   background-repeat: no-repeat;
@@ -180,22 +188,17 @@ iframe {
   align-items: center;
   margin-left: 50%;
   z-index: 99;
-  /*@media only screen and (max-width: 900px) {
-      #follow-us {
-          display: none;
-      }
-  }*/
 }
 .footer .social-block #social-wrapper .social-symbols #facebook-icon, .footer .social-block #social-wrapper .social-symbols #instagram-icon {
   padding: 0.1em;
   height: 3em;
 }
+.footer .social-block #social-wrapper .social-symbols #facebook-icon:hover, .footer .social-block #social-wrapper .social-symbols #instagram-icon:hover {
+  filter: brightness(0.7);
+}
 .footer .social-block #social-wrapper .social-symbols #follow-us {
   padding: 0.5em;
   height: 3em;
-}
-.footer .social-block #social-wrapper #facebook-icon:hover, .footer .social-block #social-wrapper #instagram-icon:hover {
-  filter: brightness(0.7);
 }
 .footer .iso-cert {
   position: fixed;
