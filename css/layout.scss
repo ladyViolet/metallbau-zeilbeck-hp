@@ -20,6 +20,12 @@ body {
     a {
         text-decoration: unset;
         color: unset;
+        
+        &:hover, &:focus, &:active {
+            text-decoration: unset;
+            color: unset;
+            background-color: none !important;
+        }
     }
 }
 
@@ -62,18 +68,19 @@ iframe {
         height: 100px;
         align-items: center;
         display: flex;
+
+        &:hover, &:focus {
+            color: var(--grey);
+            text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+            background-color: unset !important;
+        }
     }
 
-    a:hover {
-        color: var(--grey);
-        text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
-        background-color: unset !important;
-    }
-
+    
     .active {
         text-decoration: underline 3px solid var(--telemagenta);
         text-underline-offset: 5px;
-        background-color: unset;
+        background-color: unset !important;
     }
 
     .navbar-brand {
@@ -82,10 +89,10 @@ iframe {
         img {
             height: 100%;
         }
-    }
 
-    .navbar-brand:hover {
-        filter: brightness(.8);
+        &:hover {
+            filter: brightness(.8);
+        }
     }
 
     .icon-bar {
@@ -97,13 +104,13 @@ iframe {
         box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;        height: 40px;
         top: 20%;
         z-index: 1100;
+        
+        &:hover {
+            background-color: var(--lightgrey);
+        }
     }
 
-    .navbar-toggle:hover {
-        background-color: var(--lightgrey);
-    }
-
-    .in {
+      .collapsing, .in {
         position: absolute;
         right: 0;
         padding-top: 70px;
@@ -138,9 +145,6 @@ iframe {
     }
 }
 }
-
-
-
 
 //FOOTER
 .footer {

@@ -18,6 +18,11 @@ body a {
   text-decoration: unset;
   color: unset;
 }
+body a:hover, body a:focus, body a:active {
+  text-decoration: unset;
+  color: unset;
+  background-color: none !important;
+}
 
 iframe {
   width: 80vw;
@@ -56,7 +61,7 @@ iframe {
   align-items: center;
   display: flex;
 }
-.navbar a:hover {
+.navbar .nav-item a:hover, .navbar .nav-item a:focus {
   color: var(--grey);
   text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
   background-color: unset !important;
@@ -65,7 +70,7 @@ iframe {
   -webkit-text-decoration: underline 3px solid var(--telemagenta);
           text-decoration: underline 3px solid var(--telemagenta);
   text-underline-offset: 5px;
-  background-color: unset;
+  background-color: unset !important;
 }
 .navbar .navbar-brand {
   height: 100%;
@@ -90,7 +95,7 @@ iframe {
 .navbar .navbar-toggle:hover {
   background-color: var(--lightgrey);
 }
-.navbar .in {
+.navbar .collapsing, .navbar .in {
   position: absolute;
   right: 0;
   padding-top: 70px;
