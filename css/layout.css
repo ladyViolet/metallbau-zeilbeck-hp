@@ -7,6 +7,7 @@ font-family: 'Source Sans Pro', sans-serif;*/
   --darkgrey: #383838;
   --transparent_white: rgba(255, 255, 255, 0.866);
   --vertical-dropshadow-down: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  --vertical-dropshadow-up: rgba(0, 0, 0, 0.1) 0px -4px 6px -1px, rgba(0, 0, 0, 0.06) 0px -2px 4px -1px;
 }
 
 body {
@@ -125,6 +126,36 @@ iframe {
     transform: translate(-50%, -40%);
   }
 }
+@media screen and (max-width: 768px) {
+  .home {
+    height: 65vh;
+  }
+}
+
+.expandOnSmall {
+  position: relative;
+  height: 13vh;
+  background-color: var(--transparent_white);
+  box-shadow: var(--vertical-dropshadow-up);
+}
+.expandOnSmall .social-symbols {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}
+.expandOnSmall .social-symbols #facebook-icon, .expandOnSmall .social-symbols #instagram-icon, .expandOnSmall .social-symbols #isocert-icon-small {
+  padding: 0.1em;
+  height: 3em;
+}
+.expandOnSmall .social-symbols #facebook-icon:hover, .expandOnSmall .social-symbols #instagram-icon:hover, .expandOnSmall .social-symbols #isocert-icon-small:hover {
+  filter: brightness(0.7);
+}
+.expandOnSmall .social-symbols #follow-us-2 {
+  padding: 0.5em;
+  height: 3em;
+}
 
 .footer {
   position: fixed;
@@ -167,14 +198,6 @@ iframe {
   width: -moz-fit-content;
   width: fit-content;
   z-index: 99;
-}
-.footer .social-block .expandOnSmall {
-  position: unset;
-  bottom: unset;
-  right: unset;
-  width: 100vw;
-  background-color: white;
-  z-index: 1000 !important;
 }
 .footer .social-block #social-wrapper {
   background-image: url("../img/social-block.svg");

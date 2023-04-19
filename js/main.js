@@ -3,6 +3,7 @@
 
 const followUs = document.querySelector('#follow-us');
 const collapseOnSmallScreens = document.querySelectorAll('.collapseOnSmall');
+const expandOnSmallScreens = document.querySelectorAll('.expandOnSmall');
 const break900 = window.matchMedia("(max-width: 900px)");
 const break768 = window.matchMedia("(max-width: 768px)");
 
@@ -26,7 +27,19 @@ function collapseItems768(break768) {
     } 
 };
 
+function expandItems768(break768) {
+    if (break768.matches) {
+        expandOnSmallScreens.forEach((element) => {
+        element.classList.remove('collapse');})
+    } else {
+        expandOnSmallScreens.forEach((element) => {
+            element.classList.add('collapse');})  
+    } 
+};
+
 collapseItems900(break900); 
-collapseItems768(break768); 
+collapseItems768(break768);
+expandItems768(break768); 
 break900.addListener(collapseItems900);
 break768.addListener(collapseItems768);
+break768.addListener(expandItems768);

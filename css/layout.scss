@@ -10,6 +10,7 @@ font-family: 'Source Sans Pro', sans-serif;*/
     --darkgrey: #383838;
     --transparent_white: rgba(255, 255, 255, 0.866);
     --vertical-dropshadow-down: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    --vertical-dropshadow-up: rgba(0, 0, 0, 0.1) 0px -4px 6px -1px, rgba(0, 0, 0, 0.06) 0px -2px 4px -1px;
 }
 
 //DESKTOP
@@ -136,14 +137,50 @@ iframe {
             height: 100%;
         }
     }
-    
+
     @media only screen and (max-width: 900px) {
-    .teaser-text {
-        left: 50%;
-        top: 40%;
-        transform: translate(-50%, -40%);
+        .teaser-text {
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%, -40%);
+        }
     }
+
+    @media screen and (max-width: 768px) {
+        height: 65vh;
+    }
+
 }
+
+.expandOnSmall {
+    position: relative;
+    height: 13vh;
+    background-color: var(--transparent_white);
+    box-shadow: var(--vertical-dropshadow-up);
+
+    .social-symbols {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);;
+        z-index: 99;
+
+        #facebook-icon, #instagram-icon, #isocert-icon-small {
+            padding: .1em;
+            height: 3em;
+
+            &:hover {
+                filter: brightness(.7); 
+            }
+        }
+
+        //TODO fix hover behaviour of isocert icon + float right
+
+        #follow-us-2 {
+            padding: .5em;
+            height: 3em;
+        }
+    }
 }
 
 //FOOTER
@@ -191,15 +228,6 @@ iframe {
         right: 0px;
         width: fit-content;
         z-index: 99;
-
-        .expandOnSmall {
-            position: unset;
-            bottom: unset;
-            right: unset;
-            width: 100vw;
-            background-color: white;
-            z-index: 1000 !important;
-        }
 
         #social-wrapper {
             background-image: url("../img/social-block.svg");
