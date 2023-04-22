@@ -3,9 +3,11 @@
 
 const followUs = document.querySelector('#follow-us');
 const collapseOnSmallScreens = document.querySelectorAll('.collapseOnSmall');
+const collapseOnVerySmallScreens = document.querySelectorAll('.collapseOnVerySmall');
 const expandOnSmallScreens = document.querySelectorAll('.expandOnSmall');
 const break900 = window.matchMedia("(max-width: 900px)");
 const break768 = window.matchMedia("(max-width: 768px)");
+const break455 = window.matchMedia("(max-width: 455px)");
 
 
 function collapseItems900(break900) {
@@ -27,6 +29,16 @@ function collapseItems768(break768) {
     } 
 };
 
+function collapseItems455(break455) {
+    if (break455.matches) {
+        collapseOnVerySmallScreens.forEach((element) => {
+        element.classList.add('collapse');})
+    } else {
+        collapseOnVerySmallScreens.forEach((element) => {
+            element.classList.remove('collapse');})  
+    } 
+};
+
 function expandItems768(break768) {
     if (break768.matches) {
         expandOnSmallScreens.forEach((element) => {
@@ -39,7 +51,9 @@ function expandItems768(break768) {
 
 collapseItems900(break900); 
 collapseItems768(break768);
+collapseItems455(break455);
 expandItems768(break768); 
 break900.addListener(collapseItems900);
 break768.addListener(collapseItems768);
+break455.addListener(collapseItems455);
 break768.addListener(expandItems768);
