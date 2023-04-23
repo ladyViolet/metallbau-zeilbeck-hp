@@ -134,7 +134,7 @@ iframe {
         }
     }
 
-    @media only screen and (max-width: 900px) {
+    @media screen and (max-width: 900px) {
         .teaser-text {
             left: 50%;
             top: 40%;
@@ -158,33 +158,37 @@ iframe {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);;
+        transform: translate(-50%, -50%) !important;
         z-index: 99;
 
-        #facebook-icon, #instagram-icon, #isocert-icon-small {
+        #facebook-icon, #instagram-icon {
             padding: .1em;
             height: 3em;
         }
-
-        //TODO fix hover behaviour of isocert icon + float right
 
         #follow-us-2 {
             padding: .5em;
             height: 3em;
         }
     }
+
+    #isocert-icon-small {
+        position: absolute;
+        top: 50%;
+        left: 85%;
+        transform: translate(-50%, -50%) !important;
+    }
 }
 
 //FOOTER
 .footer {
-    position: fixed;
     background-color: var(--darkgrey);
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 60px;
     z-index: 80;
     padding: .8em;
+    margin-bottom: 0 !important;
      
     .footer-links {
     color: var(--transparent_white) !important;

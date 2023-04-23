@@ -16,7 +16,6 @@ tlOnLoad.from('#title', {
     ease: Power4.easeOut
 }, "-=.5").from('.teaser-text', {
     opacity: 0,
-    y: -100,
     duration: .5,
     ease: Power4.easeOut
 }).from('.social-block', {
