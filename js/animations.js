@@ -37,6 +37,7 @@ tlOnLoad.from('#title', {
 //ON HOVER
 //-------------------
 const shrinkElements = document.querySelectorAll(".hoverShrink");
+const mobileShrinkElements = document.querySelectorAll(".mobileShrink");
 
   function playHoverShrink(num) {
     console.log(num);
@@ -64,6 +65,6 @@ window.onload = function()
         shrinkElements[x].addEventListener("mouseenter", () => playHoverShrink(x));
         shrinkElements[x].addEventListener("mouseleave", () => reverseHoverShrink(x));
     }
-
+    
     tlOnLoad.play();
 }
