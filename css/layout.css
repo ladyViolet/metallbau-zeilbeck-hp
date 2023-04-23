@@ -80,9 +80,6 @@ iframe {
 .navbar .navbar-brand svg {
   height: 100%;
 }
-.navbar .navbar-brand:hover {
-  filter: brightness(0.8);
-}
 .navbar .icon-bar {
   background-color: var(--telemagenta);
 }
@@ -149,9 +146,6 @@ iframe {
   padding: 0.1em;
   height: 3em;
 }
-.expandOnSmall .social-symbols #facebook-icon:hover, .expandOnSmall .social-symbols #instagram-icon:hover, .expandOnSmall .social-symbols #isocert-icon-small:hover {
-  filter: brightness(0.7);
-}
 .expandOnSmall .social-symbols #follow-us-2 {
   padding: 0.5em;
   height: 3em;
@@ -216,9 +210,6 @@ iframe {
   padding: 0.1em;
   height: 3em;
 }
-.footer .social-block #social-wrapper .social-symbols #facebook-icon:hover, .footer .social-block #social-wrapper .social-symbols #instagram-icon:hover {
-  filter: brightness(0.7);
-}
 .footer .social-block #social-wrapper .social-symbols #follow-us {
   padding: 0.5em;
   height: 3em;
@@ -239,7 +230,4 @@ iframe {
 }
 .footer .iso-cert #iso-wrapper img {
   height: 110px;
-}
-.footer .iso-cert #iso-wrapper img:hover {
-  filter: brightness(0.7);
 }/*# sourceMappingURL=layout.css.map */

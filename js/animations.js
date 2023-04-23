@@ -35,10 +35,36 @@ tlOnLoad.from('#title', {
     ease: Bounce.easeOut
 });
 
-window.onload = function()
-{
-    tlOnLoad.play();
-}
-
 //ON HOVER
 //-------------------
+const shrinkElements = document.querySelectorAll(".hoverShrink");
+
+  function playHoverShrink(num) {
+    console.log(num);
+    gsap.to("#shrinkElem-" + num, {
+        paused: true,
+        scale: 0.9,
+        //ease: Bounce.easeOut
+      }).play();
+  };
+
+  function reverseHoverShrink(num) {
+    console.log(num);
+    gsap.to("#shrinkElem-" + num, {
+        paused: true,
+        scale: 1,
+      }).play();
+  };
+
+//INIT
+
+window.onload = function()
+{
+    for (let x = 0; x < shrinkElements.length; x++) {
+        console.log(x);
+        shrinkElements[x].addEventListener("mouseenter", () => playHoverShrink(x));
+        shrinkElements[x].addEventListener("mouseleave", () => reverseHoverShrink(x));
+    }
+
+    tlOnLoad.play();
+}

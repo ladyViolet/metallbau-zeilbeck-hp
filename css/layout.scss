@@ -90,10 +90,6 @@ iframe {
         svg {
             height: 100%;
         }
-
-        &:hover {
-            filter: brightness(.8);
-        }
     }
 
     .icon-bar {
@@ -168,10 +164,6 @@ iframe {
         #facebook-icon, #instagram-icon, #isocert-icon-small {
             padding: .1em;
             height: 3em;
-
-            &:hover {
-                filter: brightness(.7); 
-            }
         }
 
         //TODO fix hover behaviour of isocert icon + float right
@@ -245,10 +237,6 @@ iframe {
                 #facebook-icon, #instagram-icon {
                     padding: .1em;
                     height: 3em;
-
-                    &:hover {
-                        filter: brightness(.7); 
-                    }
                 }
 
                 #follow-us {
@@ -274,10 +262,6 @@ iframe {
 
             img {
                 height: 110px;
-            }
-
-            img:hover {
-            filter: brightness(.7);
             }
         }
     }
