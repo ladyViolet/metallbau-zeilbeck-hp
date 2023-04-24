@@ -157,12 +157,16 @@ iframe {
     .social-symbols {
         position: absolute;
         top: 50%;
-        left: 17%;
+        left: 20%;
         transform: translate(-50%, -50%) !important;
         z-index: 99;
 
         #facebook-icon, #instagram-icon {
             height: 4em;
+
+            &:hover {
+                filter: brightness(.7);
+            }
         }
 
         #follow-us-2 {
@@ -177,6 +181,10 @@ iframe {
         top: 50%;
         left: 85%;
         transform: translate(-50%, -50%) !important;
+
+        &:hover {
+            filter: brightness(3);
+        }
     }
 }
 

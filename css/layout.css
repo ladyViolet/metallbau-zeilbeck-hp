@@ -138,12 +138,15 @@ iframe {
 .expandOnSmall .social-symbols {
   position: absolute;
   top: 50%;
-  left: 17%;
+  left: 20%;
   transform: translate(-50%, -50%) !important;
   z-index: 99;
 }
 .expandOnSmall .social-symbols #facebook-icon, .expandOnSmall .social-symbols #instagram-icon {
   height: 4em;
+}
+.expandOnSmall .social-symbols #facebook-icon:hover, .expandOnSmall .social-symbols #instagram-icon:hover {
+  filter: brightness(0.7);
 }
 .expandOnSmall .social-symbols #follow-us-2 {
   padding-right: 0.5em;
@@ -155,6 +158,9 @@ iframe {
   top: 50%;
   left: 85%;
   transform: translate(-50%, -50%) !important;
+}
+.expandOnSmall #isocert-icon-small:hover {
+  filter: brightness(3);
 }
 
 .footer {
