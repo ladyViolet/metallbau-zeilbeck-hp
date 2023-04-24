@@ -138,12 +138,11 @@ iframe {
 .expandOnSmall .social-symbols {
   position: absolute;
   top: 50%;
-  left: 20%;
+  left: 17%;
   transform: translate(-50%, -50%) !important;
   z-index: 99;
 }
 .expandOnSmall .social-symbols #facebook-icon, .expandOnSmall .social-symbols #instagram-icon {
-  padding: 0.1em;
   height: 4em;
 }
 .expandOnSmall .social-symbols #follow-us-2 {
