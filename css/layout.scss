@@ -157,7 +157,7 @@ iframe {
     .social-symbols {
         position: absolute;
         top: 50%;
-        left: 50%;
+        left: 20%;
         transform: translate(-50%, -50%) !important;
         z-index: 99;
 
@@ -167,12 +167,13 @@ iframe {
         }
 
         #follow-us-2 {
-            padding: .5em;
-            height: 3em;
+            padding-right: .5em ;
+            height: 2em;
         }
     }
 
     #isocert-icon-small {
+        height: 5.5em;
         position: absolute;
         top: 50%;
         left: 85%;
