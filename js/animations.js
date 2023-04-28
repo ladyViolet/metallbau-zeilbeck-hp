@@ -43,7 +43,6 @@ const shrinkElements = document.querySelectorAll(".hoverShrink");
     gsap.to("#shrinkElem-" + num, {
         paused: true,
         scale: 0.9,
-        //ease: Bounce.easeOut
       }).play();
   };
 

@@ -10,6 +10,10 @@ font-family: 'Source Sans Pro', sans-serif;*/
   --vertical-dropshadow-up: rgba(0, 0, 0, 0.1) 0px -4px 6px -1px, rgba(0, 0, 0, 0.06) 0px -2px 4px -1px;
 }
 
+.hidden {
+  display: none;
+}
+
 body {
   padding: unset;
   margin: unset;
@@ -25,25 +29,15 @@ body a:hover, body a:focus, body a:active {
   background-color: none !important;
 }
 
-iframe {
-  width: 80vw;
-  height: 100vh;
-  background-color: var(--darkgrey);
-  display: block;
-  margin: 0 auto;
-}
-
 .main-background {
+  position: fixed;
+  top: 0;
   background-image: url("../img/background.svg");
   background-color: var(--grey);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
-}
-
-.hidden {
-  display: none;
 }
 
 .navbar {
@@ -129,9 +123,67 @@ iframe {
   }
 }
 
+#metallzert {
+  width: 80vw;
+  height: 100vh;
+  background-color: var(--darkgrey);
+  display: block;
+  margin: 0 auto;
+}
+
+.social-block {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 99;
+}
+.social-block #social-wrapper {
+  background-image: url("../img/social-block.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1.5em 5em;
+}
+.social-block #social-wrapper .social-symbols {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50%;
+  z-index: 99;
+}
+.social-block #social-wrapper .social-symbols #facebook-icon, .social-block #social-wrapper .social-symbols #instagram-icon {
+  padding: 0.1em;
+  height: 3em;
+}
+.social-block #social-wrapper .social-symbols #follow-us {
+  padding: 0.5em;
+  height: 3em;
+}
+
+.iso-cert {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: black;
+  z-index: 99;
+}
+.iso-cert #iso-wrapper {
+  align-items: center;
+  display: flex;
+  padding: 1em 2em;
+}
+.iso-cert #iso-wrapper img {
+  height: 110px;
+}
+
 .expandOnSmall {
-  position: relative;
+  position: fixed;
+  bottom: 60px;
   height: 13vh;
+  width: 100%;
   background-color: var(--transparent_white);
   box-shadow: var(--vertical-dropshadow-up);
 }
@@ -140,7 +192,7 @@ iframe {
   top: 50%;
   left: 20%;
   transform: translate(-50%, -50%) !important;
-  z-index: 99;
+  z-index: 70;
 }
 .expandOnSmall .social-symbols #facebook-icon, .expandOnSmall .social-symbols #instagram-icon {
   height: 4em;
@@ -153,10 +205,11 @@ iframe {
   height: 2em;
 }
 .expandOnSmall #isocert-icon-small {
-  height: 5.5em;
+  height: 6em;
+  padding: 0.2em 0;
   position: absolute;
   top: 50%;
-  left: 85%;
+  left: 90%;
   transform: translate(-50%, -50%) !important;
 }
 .expandOnSmall #isocert-icon-small:hover {
@@ -165,12 +218,13 @@ iframe {
 
 .footer {
   background-color: var(--darkgrey);
+  height: 60px;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   z-index: 80;
   padding: 0.8em;
-  margin-bottom: 0 !important;
 }
 .footer .footer-links {
   color: var(--transparent_white) !important;
@@ -195,50 +249,4 @@ iframe {
   text-align: center;
   color: var(--lightgrey);
   padding-top: 0.2em;
-}
-.footer .social-block {
-  position: fixed;
-  bottom: 0px;
-  right: 0px;
-  width: -moz-fit-content;
-  width: fit-content;
-  z-index: 99;
-}
-.footer .social-block #social-wrapper {
-  background-image: url("../img/social-block.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 1.5em 5em;
-}
-.footer .social-block #social-wrapper .social-symbols {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 50%;
-  z-index: 99;
-}
-.footer .social-block #social-wrapper .social-symbols #facebook-icon, .footer .social-block #social-wrapper .social-symbols #instagram-icon {
-  padding: 0.1em;
-  height: 3em;
-}
-.footer .social-block #social-wrapper .social-symbols #follow-us {
-  padding: 0.5em;
-  height: 3em;
-}
-.footer .iso-cert {
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  width: -moz-fit-content;
-  width: fit-content;
-  color: black;
-  z-index: 99;
-}
-.footer .iso-cert #iso-wrapper {
-  align-items: center;
-  display: flex;
-  padding: 1em 2em;
-}
-.footer .iso-cert #iso-wrapper img {
-  height: 110px;
 }/*# sourceMappingURL=layout.css.map */
