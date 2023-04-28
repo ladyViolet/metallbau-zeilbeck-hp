@@ -49,6 +49,9 @@ body {
 
 //HEADER
 .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
     height: 100px;
     padding-right: 10px;
     border-radius: unset;
@@ -112,15 +115,15 @@ body {
 
 //MAIN-AREA
 //HOME
-.home {
-    height: 80vh;
+.home, .impressum {
     position: relative;
-
+    padding-top: 100px;
+    
     .teaser-text {
-        height: 70%;
-        z-index: 80;
+        height: 60vh;
+        z-index: 60;
         left: 30%;
-        top: 50%;
+        top: 50vh;
         transform: translate(-30%, -50%);
         position: absolute;
         
@@ -131,15 +134,60 @@ body {
 
     @media screen and (max-width: 900px) {
         .teaser-text {
+            height: 50vh;
+            top: 42vh;
             left: 50%;
-            top: 40%;
             transform: translate(-50%, -40%);
+        }
+    }
+}
+
+.impressum {
+    padding-bottom: 8vh;
+
+    @media screen and (max-width: 768px) {
+     padding-bottom: 22vh;
+    }
+}
+
+//IMPRESSUM
+.impressum-text {
+    margin: 3em 10em;
+    background-color: var(--transparent_white);
+    padding: 3% 5%;
+    font-family: 'Roboto', sans-serif;
+    color: var(--darkgrey);
+
+    h3 {
+        font-weight: 500;
+        color: var(--telemagenta);
+    }
+
+    h4 {
+        color: black;
+    }
+
+    .adress, .legal-notice, .business-owner {
+        margin-top: 2em;
+    }
+
+    .legal-notice {
+        p {
+            padding-bottom: 1em;
+        }
+    }
+
+    a {
+        color: black;
+        &:hover {
+            color: var(--telemagenta);
         }
     }
 
     @media screen and (max-width: 768px) {
-        height: 65vh;
-    }
+        margin: 2em;
+        padding: 5%;
+       }
 }
 
 //ISOCERT PAGE
@@ -157,7 +205,7 @@ body {
     bottom: 0px;
     right: 0px;
     width: fit-content;
-    z-index: 99;
+    z-index: 99 !important;
 
     #social-wrapper {
         background-image: url("../img/social-block.svg");
@@ -216,11 +264,13 @@ body {
     .social-symbols {
         position: absolute;
         top: 50%;
-        left: 20%;
+        left: 15%;
         transform: translate(-50%, -50%) !important;
         z-index: 70;
 
         #facebook-icon, #instagram-icon {
+            position: relative;
+            left: 10%;
             height: 4em;
 
             &:hover {
@@ -229,14 +279,16 @@ body {
         }
 
         #follow-us-2 {
-            padding-right: .5em ;
+            position: relative;
             height: 2em;
+            left: 10%;
+            padding: 0 .5em 0 1em;
         }
     }
 
     #isocert-icon-small {
         height: 6em;
-        padding: .2em 0;
+        padding: .2em 2em .2em 0;
         position: absolute;
         top: 50%;
         left: 90%;

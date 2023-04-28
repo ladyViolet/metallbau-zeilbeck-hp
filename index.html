@@ -18,7 +18,7 @@
 </head>
 <body>
     <!--header-->
-    <header class="header">
+    <header id="header">
        <nav class="navbar" id="sticky-navbar">
             <a class="navbar-brand hoverShrink" id="shrinkElem-0" href="index.html">
                 <svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" inkscape:export-filename="C:\Users\Laura\OneDrive\Metallbau Zeilbeck\Logo\FZ-Logo_WortBildmarke.png" inkscape:export-xdpi="300" inkscape:export-ydpi="300" inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)" sodipodi:docname="FZ-Logo_WortBildmarke.svg" viewBox="0 0 178.172 69.741">
@@ -59,35 +59,81 @@
         </nav> 
     </header>
      
-    <div class="main-background"></div>
-       
-    <!--main content area-->
-    <section class="home">
-        <div class="teaser-text">
-            <img src="img/teaser-container.svg" alt="">
-        </div>  
-    </section>  
+    <main>
+        <div class="main-background"></div>
+        
+        <!--main content area-->
+        <section class="home hidden">
+            <div class="teaser-text">
+                <img src="img/teaser-container.svg" alt="">
+            </div>  
+        </section> 
+        
+        <section class="impressum">
+            <div class="impressum-text">
+                <h3>Metallbau Zeilbeck</h1>
+                <div class="adress">
+                    <address>
+                        Öxlau 5, Öxlau 9-11 <br>
+                        93326 Abensberg
+                    </address>
     
-    <!--social-media symbols-->
-    <div class="social-block collapseOnSmall">
-        <div id="social-wrapper">
-            <div class="social-symbols"> 
-                <img id="follow-us" src="./img/follow-us.svg" alt="">
-                <a class="hoverShrink" id="shrinkElem-1" href="https://www.facebook.com/MetallbauZeilbeck/" target="_blank"><img id="facebook-icon" src="./img/facebook-icon.svg" alt=""></a>
-                <a class="hoverShrink" id="shrinkElem-2"href="https://www.instagram.com/metallbau_zeilbeck/" target="_blank"><img id="instagram-icon" src="./img/instagram-icon.svg" alt=""></a>
-            </div>
-        </div>
-    </div>  
+                    <p>Telefon: <a href="tel: 499443905510">+49 9443 905510</a></p>
+    
+                    <p>E-Mail: <a href="mailto:info@metallbau-zeilbeck.de">info@metallbau-zeilbeck.de</a></p>
+    
+                    <p>Homepage: <a href="https://www.metallbau-zeilbeck.de/" target="_blank">https://www.metallbau-zeilbeck.de/</a></p>
+                
+                </div>
+                <div class="business-owner">
 
-    <div class="expandOnSmall">
-        <div class="social-symbols"> 
-            <img class="collapseOnVerySmall" id="follow-us-2" src="./img/follow-us.svg" alt="">
-            <a href="https://www.facebook.com/MetallbauZeilbeck/" target="_blank"><img id="facebook-icon" src="./img/facebook-icon.svg" alt=""></a>
-            <a href="https://www.instagram.com/metallbau_zeilbeck/" target="_blank"><img id="instagram-icon" src="./img/instagram-icon.svg" alt=""></a>
-        </div>
-        <a href="iso-certificate.html" target="_blank"><img id="isocert-icon-small" src="./img/isocert-dark-small.svg" alt=""></a>
-    </div> 
-  
+                    <h4>Geschäftsführung</h4>
+                    <p>Fritz Zeilbeck</p>
+
+                    <p>
+                        Registergericht: <br>
+                        Registernummer: 
+                    </p>
+    
+                    <p>
+                        Umsatzsteuer-Identifikationsnummer <br>
+                        gemäß § 27a UStG: DE
+                    </p>
+                </div> 
+                    
+                <div class="legal-notice">
+                    <h4>Haftungshinweis</h4>
+                    <p>Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlicch.</p>
+                    <h4>Copyrighthinweis</h4>
+                    <p>Alle Inhalte (Texte, Grafiken, Publikationen) sind urheberrechtlich geschützt und dürfen nur mit vorheriger schriftlicher Erlaubnis von Metallbau Zeilbeck verwendet werden.</p>
+    
+                    <h4>Gestaltung und technische Umsetzung</h4>
+                    <p>Laura Zeilbeck | Web & Graphic Design</p>
+                </div>
+            </div>
+        </section>
+        
+        <!--social-media symbols-->
+        <div class="social-block collapseOnSmall">
+            <div id="social-wrapper">
+                <div class="social-symbols"> 
+                    <img id="follow-us" src="./img/follow-us.svg" alt="">
+                    <a class="hoverShrink" id="shrinkElem-1" href="https://www.facebook.com/MetallbauZeilbeck/" target="_blank"><img id="facebook-icon" src="./img/facebook-icon.svg" alt=""></a>
+                    <a class="hoverShrink" id="shrinkElem-2"href="https://www.instagram.com/metallbau_zeilbeck/" target="_blank"><img id="instagram-icon" src="./img/instagram-icon.svg" alt=""></a>
+                </div>
+            </div>
+        </div>  
+
+        <div class="expandOnSmall">
+            <div class="social-symbols"> 
+                <img class="collapseOnVerySmall" id="follow-us-2" src="./img/follow-us.svg" alt="">
+                <a href="https://www.facebook.com/MetallbauZeilbeck/" target="_blank"><img id="facebook-icon" src="./img/facebook-icon.svg" alt=""></a>
+                <a href="https://www.instagram.com/metallbau_zeilbeck/" target="_blank"><img id="instagram-icon" src="./img/instagram-icon.svg" alt=""></a>
+            </div>
+            <a href="iso-certificate.html" target="_blank"><img id="isocert-icon-small" src="./img/isocert-dark-small.svg" alt=""></a>
+        </div> 
+    </main>
+
     <!--footer-->
     <footer class="footer">
         <div class="container-fluid">
