@@ -49,6 +49,22 @@ function expandItems768(break768) {
     } 
 };
 
+const contentElements = document.getElementsByClassName(".content-element");
+
+function toggle(item) {
+    for (var i = 0; i < contentElements.length(); i++) {
+        if (contentElements[i] != item) {
+            contentElements[i].classList.add("hidden");
+        }
+        var status = document.getElementById(item).classList;
+        if (status.contains("hidden")) {
+            status.classList.add("hidden");
+        }else{
+            status.classList.remove("hidden");
+        }
+    }
+}
+ 
 collapseItems900(break900); 
 collapseItems768(break768);
 collapseItems455(break455);
@@ -57,3 +73,4 @@ break900.addListener(collapseItems900);
 break768.addListener(collapseItems768);
 break455.addListener(collapseItems455);
 break768.addListener(expandItems768);
+console.log("hello");

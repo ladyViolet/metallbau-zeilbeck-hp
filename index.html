@@ -49,11 +49,11 @@
 
             <div class="collapse navbar-collapse mr-auto" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                <li class="nav-item active"><a href="index.html">HOME</a></li>
-                <li class="nav-item"><a href="#">ÜBER UNS</a></li>
-                <li class="nav-item"><a href="#">PRODUKTE</a></li>
-                <li class="nav-item"><a href="#">REFERENZEN</a></li>
-                <li class="nav-item"><a href="#">JOBS</a></li>
+                <li class="nav-item active" id="nav-home" onclick="return toggle('#home')"><a href="index.html">HOME</a></li>
+                <li class="nav-item" id="nav-about" onclick="return toggle('x')"><a href="#">ÜBER UNS</a></li>
+                <li class="nav-item" id="nav-products" onclick="return toggle('x')"><a href="#">PRODUKTE</a></li>
+                <li class="nav-item" id="nav-references" onclick="return toggle('x')"><a href="#">REFERENZEN</a></li>
+                <li class="nav-item" id="nav-jobs" onclick="return toggle('x')"><a href="#">JOBS</a></li>
                 </ul>
             </div>
         </nav> 
@@ -63,13 +63,13 @@
         <div class="main-background"></div>
         
         <!--main content area-->
-        <section class="home hidden">
+        <section class="content-element home hidden" id="home">
             <div class="teaser-text">
                 <img src="img/teaser-container.svg" alt="">
             </div>  
         </section> 
         
-        <section class="impressum">
+        <section class="content-element impressum" id="impressum">
             <div class="impressum-text">
                 <h3>Metallbau Zeilbeck</h1>
                 <div class="adress">
@@ -91,13 +91,13 @@
                     <p>Fritz Zeilbeck</p>
 
                     <p>
-                        Registergericht: <br>
-                        Registernummer: 
+                        Registergericht: HWK Regensburg unter der Nummer 6601294<br>
+                        Handelsregisternummer: 5383 Regensburg
                     </p>
     
                     <p>
                         Umsatzsteuer-Identifikationsnummer <br>
-                        gemäß § 27a UStG: DE
+                        gemäß § 27a UStG: DE128722318
                     </p>
                 </div> 
                     
@@ -108,7 +108,7 @@
                     <p>Alle Inhalte (Texte, Grafiken, Publikationen) sind urheberrechtlich geschützt und dürfen nur mit vorheriger schriftlicher Erlaubnis von Metallbau Zeilbeck verwendet werden.</p>
     
                     <h4>Gestaltung und technische Umsetzung</h4>
-                    <p>Laura Zeilbeck | Web & Graphic Design</p>
+                    <p><a href="https//:design.laura-zeilbeck.de/">Laura Zeilbeck | Web & Graphic Design</a></p>
                 </div>
             </div>
         </section>
@@ -138,9 +138,9 @@
     <footer class="footer">
         <div class="container-fluid">
             <p class="footer-links" >
-                <a href="#" class="kontakt">Kontakt</a>
-                <a href="#" class="datenschutz">Datenschutz</a>
-                <a href="#" class="impressum">Impressum</a>   
+                <a href="#"  id="nav-contact" class="kontakt">Kontakt</a>
+                <a href="#" id="nav-datasec" class="datenschutz">Datenschutz</a>
+                <a href="#" id="nav-impressum" class="impressum" onclick="return toggle('#impressum')">Impressum</a>   
             </p> 
             
             <div class="copyright">
