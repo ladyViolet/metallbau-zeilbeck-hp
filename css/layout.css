@@ -101,11 +101,11 @@ body a:hover, body a:focus, body a:active {
   height: 100vh;
 }
 
-.home, .impressum, .datasec {
+.home, .impressum, .datasec, .contact {
   position: relative;
   padding-top: 100px;
 }
-.home .teaser-text, .impressum .teaser-text, .datasec .teaser-text {
+.home .teaser-text, .impressum .teaser-text, .datasec .teaser-text, .contact .teaser-text {
   height: 60vh;
   z-index: 60;
   left: 30%;
@@ -113,11 +113,11 @@ body a:hover, body a:focus, body a:active {
   transform: translate(-30%, -50%);
   position: absolute;
 }
-.home .teaser-text img, .impressum .teaser-text img, .datasec .teaser-text img {
+.home .teaser-text img, .impressum .teaser-text img, .datasec .teaser-text img, .contact .teaser-text img {
   height: 100%;
 }
 @media screen and (max-width: 900px) {
-  .home .teaser-text, .impressum .teaser-text, .datasec .teaser-text {
+  .home .teaser-text, .impressum .teaser-text, .datasec .teaser-text, .contact .teaser-text {
     height: 50vh;
     top: 42vh;
     left: 50%;
@@ -125,11 +125,11 @@ body a:hover, body a:focus, body a:active {
   }
 }
 
-.impressum, .datasec {
+.impressum, .datasec, .contact {
   padding-bottom: 8vh;
 }
 @media screen and (max-width: 768px) {
-  .impressum, .datasec {
+  .impressum, .datasec, .contact {
     padding-bottom: 22vh;
   }
 }
@@ -140,6 +140,7 @@ body a:hover, body a:focus, body a:active {
   padding: 3% 5%;
   font-family: "Roboto", sans-serif;
   color: var(--darkgrey);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .textcontainer h2 {
   font-weight: 500;
@@ -155,6 +156,31 @@ body a:hover, body a:focus, body a:active {
   .textcontainer {
     margin: 2em;
     padding: 5%;
+  }
+}
+
+.contact .textcontainer {
+  margin-bottom: 0;
+}
+.contact .location {
+  width: 100%;
+}
+.contact .img-container {
+  margin: 0 10em;
+}
+@media screen and (max-width: 768px) {
+  .contact .img-container {
+    margin: 0 2em;
+  }
+}
+.contact #locSVG {
+  position: absolute;
+  left: 0;
+  padding: 0 10em;
+}
+@media screen and (max-width: 768px) {
+  .contact #locSVG {
+    padding: 0 2em;
   }
 }
 
