@@ -118,7 +118,7 @@ body {
 
 //MAIN-AREA
 //HOME
-.home, .impressum {
+.home, .impressum, .datasec {
     position: relative;
     padding-top: 100px;
     
@@ -145,7 +145,7 @@ body {
     }
 }
 
-.impressum {
+.impressum, .datasec {
     padding-bottom: 8vh;
 
     @media screen and (max-width: 768px) {
@@ -153,8 +153,8 @@ body {
     }
 }
 
-//IMPRESSUM
-.impressum-text {
+//IMPRESSUM, DATENSCHUTZ
+.textcontainer {
     margin: 3em 10em;
     background-color: var(--transparent_white);
     padding: 3% 5%;
@@ -166,19 +166,6 @@ body {
         color: var(--telemagenta);
     }
 
-    h4 {
-        color: black;
-    }
-
-    .adress, .legal-notice, .business-owner {
-        margin-top: 2em;
-    }
-
-    .legal-notice {
-        p {
-            padding-bottom: 1em;
-        }
-    }
 
     a {
         color: black;

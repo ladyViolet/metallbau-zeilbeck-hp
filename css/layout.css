@@ -101,11 +101,11 @@ body a:hover, body a:focus, body a:active {
   height: 100vh;
 }
 
-.home, .impressum {
+.home, .impressum, .datasec {
   position: relative;
   padding-top: 100px;
 }
-.home .teaser-text, .impressum .teaser-text {
+.home .teaser-text, .impressum .teaser-text, .datasec .teaser-text {
   height: 60vh;
   z-index: 60;
   left: 30%;
@@ -113,11 +113,11 @@ body a:hover, body a:focus, body a:active {
   transform: translate(-30%, -50%);
   position: absolute;
 }
-.home .teaser-text img, .impressum .teaser-text img {
+.home .teaser-text img, .impressum .teaser-text img, .datasec .teaser-text img {
   height: 100%;
 }
 @media screen and (max-width: 900px) {
-  .home .teaser-text, .impressum .teaser-text {
+  .home .teaser-text, .impressum .teaser-text, .datasec .teaser-text {
     height: 50vh;
     top: 42vh;
     left: 50%;
@@ -125,43 +125,34 @@ body a:hover, body a:focus, body a:active {
   }
 }
 
-.impressum {
+.impressum, .datasec {
   padding-bottom: 8vh;
 }
 @media screen and (max-width: 768px) {
-  .impressum {
+  .impressum, .datasec {
     padding-bottom: 22vh;
   }
 }
 
-.impressum-text {
+.textcontainer {
   margin: 3em 10em;
   background-color: var(--transparent_white);
   padding: 3% 5%;
   font-family: "Roboto", sans-serif;
   color: var(--darkgrey);
 }
-.impressum-text h2 {
+.textcontainer h2 {
   font-weight: 500;
   color: var(--telemagenta);
 }
-.impressum-text h4 {
+.textcontainer a {
   color: black;
 }
-.impressum-text .adress, .impressum-text .legal-notice, .impressum-text .business-owner {
-  margin-top: 2em;
-}
-.impressum-text .legal-notice p {
-  padding-bottom: 1em;
-}
-.impressum-text a {
-  color: black;
-}
-.impressum-text a:hover {
+.textcontainer a:hover {
   color: var(--telemagenta);
 }
 @media screen and (max-width: 768px) {
-  .impressum-text {
+  .textcontainer {
     margin: 2em;
     padding: 5%;
   }

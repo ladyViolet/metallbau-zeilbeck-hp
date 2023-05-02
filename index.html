@@ -50,10 +50,10 @@
             <div class="collapse navbar-collapse mr-auto" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                 <li class="nav-item active" id="nav-home" onclick="return toggle('home')"><a href="#">HOME</a></li>
-                <li class="nav-item" id="nav-about" onclick="return toggle('x')"><a href="#">ÜBER UNS</a></li>
-                <li class="nav-item" id="nav-products" onclick="return toggle('x')"><a href="#">PRODUKTE</a></li>
-                <li class="nav-item" id="nav-references" onclick="return toggle('x')"><a href="#">REFERENZEN</a></li>
-                <li class="nav-item" id="nav-jobs" onclick="return toggle('x')"><a href="#">JOBS</a></li>
+                <li class="nav-item" id="nav-about" onclick="return toggle('about')"><a href="#">ÜBER UNS</a></li>
+                <li class="nav-item" id="nav-products" onclick="return toggle('products')"><a href="#">PRODUKTE</a></li>
+                <li class="nav-item" id="nav-references" onclick="return toggle('references')"><a href="#">REFERENZEN</a></li>
+                <li class="nav-item" id="nav-jobs" onclick="return toggle('jobs')"><a href="#">JOBS</a></li>
                 </ul>
             </div>
         </nav> 
@@ -63,54 +63,111 @@
         <div class="main-background"></div>
         
         <!--main content area-->
+        <!--HOME-->
         <section class="content-element home" id="home">
             <div class="teaser-text">
                 <img src="img/teaser-container.svg" alt="">
             </div>  
         </section> 
+
+         <!--ÜBER UNS-->
+         <section class="content-element about hidden" id="about">
+
+         </section>
+
+          <!--PRODUKTE-->
+        <section class="content-element products hidden" id="products">
+
+        </section>
+
+         <!--REFERENZEN-->
+         <section class="content-element references hidden" id="references">
+
+         </section>
+
+          <!--JOBS-->
+        <section class="content-element jobs hidden" id="jobs">
+
+        </section>
         
+
+
+        <!--IMPRESSUM-->
         <section class="content-element impressum hidden" id="impressum">
-            <div class="impressum-text">
+            <div class="textcontainer">
                 <h2>Metallbau Zeilbeck</h2>
-                <div class="adress">
+               
+                <address>
+                    Öxlau 5, Öxlau 9-11 <br>
+                    93326 Abensberg
+                </address>
+
+                <p>Telefon: <a href="tel: 499443905510">+49 9443 905510</a><br>
+                E-Mail: <a href="mailto:info@metallbau-zeilbeck.de">info@metallbau-zeilbeck.de</a><br>
+                Homepage: <a href="https://www.metallbau-zeilbeck.de/" target="_blank">https://www.metallbau-zeilbeck.de/</a></p>
+                <br>
+
+                <p><strong>Geschäftsführung</strong></p>
+                <p>Fritz Zeilbeck</p>
+
+                <p>Registergericht: HWK Regensburg unter der Nummer 6601294<br>
+                Handelsregisternummer: 5383 Regensburg</p>
+
+                <p>Umsatzsteuer-Identifikationsnummer <br>
+                gemäß § 27a UStG: DE128722318</p>
+
+                <p><strong>Haftungshinweis</strong></p>
+                <p>Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlicch.</p>
+                <p><strong>Copyrighthinweis</strong></p>
+                <p>Alle Inhalte (Texte, Grafiken, Publikationen) sind urheberrechtlich geschützt und dürfen nur mit vorheriger schriftlicher Erlaubnis von Metallbau Zeilbeck verwendet werden.</p>
+
+                <p><strong>Gestaltung und technische Umsetzung</strong></p>
+                <p><a href="https//:design.laura-zeilbeck.de/">Laura Zeilbeck | Web & Graphic Design</a></p>
+            </div>
+        </section>
+
+        <!--DATENSCHUTZERKLÄRUNG-->
+        <section class="content-element datasec hidden" id="datasec">
+            <div class="textcontainer">
+                <h2>Datenschutzerklärung</h2>
+                <h4>Allgemeiner Hinweis und Pflichtinformationen zur Datenverarbeitung</h4>
+                    <p><strong>Name und Anschrift des Verantwortlichen</strong></p>
+                    <p>Der Verantwortliche im Sinne der Datenschutz-Grundverordnung (DSGVO) und anderer nationaler Datenschutzgesetze der Mitgliedsstaaten sowie sonstiger datenschutzrechtlicher Bestimmungen ist</p>
+                    <p><em>Metallbau Zeilbeck</em><br>
                     <address>
                         Öxlau 5, Öxlau 9-11 <br>
-                        93326 Abensberg
+                        93326 Abensberg<br>
+                        Deutschland
                     </address>
-    
-                    <p>Telefon: <a href="tel: 499443905510">+49 9443 905510</a></p>
-    
-                    <p>E-Mail: <a href="mailto:info@metallbau-zeilbeck.de">info@metallbau-zeilbeck.de</a></p>
-    
-                    <p>Homepage: <a href="https://www.metallbau-zeilbeck.de/" target="_blank">https://www.metallbau-zeilbeck.de/</a></p>
-                
+                    <p>Telefon: <a href="tel: 499443905510">+49 9443 905510</a><br>
+                    E-Mail: <a href="mailto:info@metallbau-zeilbeck.de">info@metallbau-zeilbeck.de</a><br>
+                    Homepage: <a href="https://www.metallbau-zeilbeck.de/" target="_blank">https://www.metallbau-zeilbeck.de/</a></p>
+                    <br>
+                    <p><strong>Widerruf Ihrer Einwilligung zur Datenverarbeitung</strong></p>
+                    <p>Nur mit Ihrer ausdrücklichen Einwilligung sind einige Vorgänge der Datenverarbeitung möglich. Ein Widerruf Ihrer bereits erteilten Einwilligung ist jederzeit möglich. Für den Widerruf genügt eine formlose Mitteilung per E-Mail. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.</p>
+              
+                    <p><strong>Recht auf Beschwerde bei der zuständigen Aufsichtsbehörde</strong></p>
+                    <p>Als Betroffener steht Ihnen im Falle eines datenschutzrechtlichen Verstoßes ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu. Zuständige Aufsichtsbehörde bezüglich datenschutzrechtlicher Fragen ist der Landesdatenschutzbeauftragte des Bundeslandes, in dem sich der Sitz unseres Unternehmens befindet. Der folgende Link stellt eine Liste der Datenschutzbeauftragten sowie deren Kontaktdaten bereit: <a href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html" target="_blank">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a>.</p>
+               
+                    <p><strong>Recht auf Datenübertragbarkeit</strong></p>
+                    <p>Ihnen steht das Recht zu, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an Dritte aushändigen zu lassen. Die Bereitstellung erfolgt in einem maschinenlesbaren Format. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist.</p>
+               
+                    <p><strong>Recht auf Auskunft, Berichtigung, Sperrung, Löschung</strong></p>
+                    <p>Sie haben jederzeit im Rahmen der geltenden gesetzlichen Bestimmungen das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, Herkunft der Daten, deren Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Diesbezüglich und auch zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit über die im Impressum aufgeführten Kontaktmöglichkeiten an uns wenden.</p>
+               
+                    <p><strong>SSL- bzw. TLS-Verschlüsselung</strong></p>
+                    <p>Aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, die Sie an uns als Seitenbetreiber senden, nutzt unsere Website eine SSL-bzw. TLS-Verschlüsselung. Damit sind Daten, die Sie über diese Website übermitteln, für Dritte nicht mitlesbar. Sie erkennen eine verschlüsselte Verbindung an der „https://“ Adresszeile Ihres Browsers und am Schloss-Symbol in der Browserzeile.</p>
+               
+                    <p><strong>Kontaktformular</strong></p>
+                    <p>Per Kontaktformular übermittelte Daten werden einschließlich Ihrer Kontaktdaten gespeichert, um Ihre Anfrage bearbeiten zu können oder um für Anschlussfragen bereitzustehen. Eine Weitergabe dieser Daten findet ohne Ihre Einwilligung nicht statt. <br>
+                    Die Verarbeitung der in das Kontaktformular eingegebenen Daten erfolgt ausschließlich auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Ein Widerruf Ihrer bereits erteilten Einwilligung ist jederzeit möglich. Für den Widerruf genügt eine formlose Mitteilung per E-Mail. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitungsvorgänge bleibt vom Widerruf unberührt. <br>
+                    Über das Kontaktformular übermittelte Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder keine Notwendigkeit der Datenspeicherung mehr besteht. Zwingende gesetzliche Bestimmungen - insbesondere Aufbewahrungsfristen - bleiben unberührt.</p>
                 </div>
-                <div class="business-owner">
+        </section>
 
-                    <h4>Geschäftsführung</h4>
-                    <p>Fritz Zeilbeck</p>
-
-                    <p>
-                        Registergericht: HWK Regensburg unter der Nummer 6601294<br>
-                        Handelsregisternummer: 5383 Regensburg
-                    </p>
-    
-                    <p>
-                        Umsatzsteuer-Identifikationsnummer <br>
-                        gemäß § 27a UStG: DE128722318
-                    </p>
-                </div> 
-                    
-                <div class="legal-notice">
-                    <h4>Haftungshinweis</h4>
-                    <p>Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlicch.</p>
-                    <h4>Copyrighthinweis</h4>
-                    <p>Alle Inhalte (Texte, Grafiken, Publikationen) sind urheberrechtlich geschützt und dürfen nur mit vorheriger schriftlicher Erlaubnis von Metallbau Zeilbeck verwendet werden.</p>
-    
-                    <h4>Gestaltung und technische Umsetzung</h4>
-                    <p><a href="https//:design.laura-zeilbeck.de/">Laura Zeilbeck | Web & Graphic Design</a></p>
-                </div>
-            </div>
+        <!--KONTAKT-->
+        <section class="content-element contact hidden" id="contact">
+            
         </section>
         
         <!--social-media symbols-->
@@ -138,8 +195,8 @@
     <footer class="footer" id="myFooter">
         <div class="container-fluid">
             <p class="footer-links" >
-                <a href="#"  id="nav-contact" class="kontakt">Kontakt</a>
-                <a href="#" id="nav-datasec" class="datenschutz">Datenschutz</a>
+                <a href="#"  id="nav-contact" class="kontakt" onclick="return toggle('contact')">Kontakt</a>
+                <a href="#" id="nav-datasec" class="datenschutz" onclick="return toggle('datasec')">Datenschutz</a>
                 <a href="#" id="nav-impressum" class="impressum" onclick="return toggle('impressum')">Impressum</a>   
             </p> 
             
