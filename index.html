@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/layout.css">
 </head>
-<body>
+<body id="onepager">
     <!--header-->
     <header id="header">
        <nav class="navbar" id="sticky-navbar">
@@ -49,7 +49,7 @@
 
             <div class="collapse navbar-collapse mr-auto" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                <li class="nav-item active" id="nav-home" onclick="return toggle('#home')"><a href="index.html">HOME</a></li>
+                <li class="nav-item active" id="nav-home" onclick="return toggle('home')"><a href="#">HOME</a></li>
                 <li class="nav-item" id="nav-about" onclick="return toggle('x')"><a href="#">ÜBER UNS</a></li>
                 <li class="nav-item" id="nav-products" onclick="return toggle('x')"><a href="#">PRODUKTE</a></li>
                 <li class="nav-item" id="nav-references" onclick="return toggle('x')"><a href="#">REFERENZEN</a></li>
@@ -63,15 +63,15 @@
         <div class="main-background"></div>
         
         <!--main content area-->
-        <section class="content-element home hidden" id="home">
+        <section class="content-element home" id="home">
             <div class="teaser-text">
                 <img src="img/teaser-container.svg" alt="">
             </div>  
         </section> 
         
-        <section class="content-element impressum" id="impressum">
+        <section class="content-element impressum hidden" id="impressum">
             <div class="impressum-text">
-                <h3>Metallbau Zeilbeck</h1>
+                <h2>Metallbau Zeilbeck</h2>
                 <div class="adress">
                     <address>
                         Öxlau 5, Öxlau 9-11 <br>
@@ -135,12 +135,12 @@
     </main>
 
     <!--footer-->
-    <footer class="footer">
+    <footer class="footer" id="myFooter">
         <div class="container-fluid">
             <p class="footer-links" >
                 <a href="#"  id="nav-contact" class="kontakt">Kontakt</a>
                 <a href="#" id="nav-datasec" class="datenschutz">Datenschutz</a>
-                <a href="#" id="nav-impressum" class="impressum" onclick="return toggle('#impressum')">Impressum</a>   
+                <a href="#" id="nav-impressum" class="impressum" onclick="return toggle('impressum')">Impressum</a>   
             </p> 
             
             <div class="copyright">

@@ -72,6 +72,9 @@ body {
             text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
             background-color: unset !important;
         }
+        &:active {
+            filter: brightness(.5);
+        }
     }
 
     
@@ -158,7 +161,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--darkgrey);
 
-    h3 {
+    h2 {
         font-weight: 500;
         color: var(--telemagenta);
     }

@@ -39,7 +39,7 @@ tlOnLoad.from('#title', {
 const shrinkElements = document.querySelectorAll(".hoverShrink");
 
   function playHoverShrink(num) {
-    console.log(num);
+    //console.log(num);
     gsap.to("#shrinkElem-" + num, {
         paused: true,
         scale: 0.9,
@@ -47,7 +47,7 @@ const shrinkElements = document.querySelectorAll(".hoverShrink");
   };
 
   function reverseHoverShrink(num) {
-    console.log(num);
+    //console.log(num);
     gsap.to("#shrinkElem-" + num, {
         paused: true,
         scale: 1,
@@ -59,7 +59,7 @@ const shrinkElements = document.querySelectorAll(".hoverShrink");
 window.onload = function()
 {
     for (let x = 0; x < shrinkElements.length; x++) {
-        console.log(x);
+        //console.log(x);
         shrinkElements[x].addEventListener("mouseenter", () => playHoverShrink(x));
         shrinkElements[x].addEventListener("mouseleave", () => reverseHoverShrink(x));
     }

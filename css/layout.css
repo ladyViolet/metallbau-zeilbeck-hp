@@ -64,6 +64,9 @@ body a:hover, body a:focus, body a:active {
   text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
   background-color: unset !important;
 }
+.navbar .nav-item a:active {
+  filter: brightness(0.5);
+}
 .navbar .active {
   -webkit-text-decoration: underline 3px solid var(--telemagenta);
           text-decoration: underline 3px solid var(--telemagenta);
@@ -138,7 +141,7 @@ body a:hover, body a:focus, body a:active {
   font-family: "Roboto", sans-serif;
   color: var(--darkgrey);
 }
-.impressum-text h3 {
+.impressum-text h2 {
   font-weight: 500;
   color: var(--telemagenta);
 }
