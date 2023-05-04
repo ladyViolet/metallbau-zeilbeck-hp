@@ -55,12 +55,20 @@ const shrinkElements = document.querySelectorAll(".hoverShrink");
   };
 
   var mapIcon = document.querySelector("#mapIcon");
+  var mapIconSmall = document.querySelector("#mapIcon-small");
   var contact = document.querySelector("#nav-contact");
 
   var bounce = gsap.to(mapIcon, {
     paused: true,
     duration: .1,
     y: 80,
+    ease: "circ.in"
+  });
+
+  var bounceSmall = gsap.to(mapIconSmall, {
+    paused: true,
+    duration: .1,
+    y: 60,
     ease: "circ.in"
   });
 
@@ -84,5 +92,8 @@ window.onload = function()
     contact.addEventListener("click", () => delayedLoad(mapIcon));
     mapIcon.addEventListener("mouseenter", () => bounce.play());
     mapIcon.addEventListener("mouseleave", () => bounce.reverse());
+    contact.addEventListener("click", () => delayedLoad(mapIconSmall));
+    mapIconSmall.addEventListener("mouseenter", () => bounceSmall.play());
+    mapIconSmall.addEventListener("mouseleave", () => bounceSmall.reverse());
     tlOnLoad.play();
 }
