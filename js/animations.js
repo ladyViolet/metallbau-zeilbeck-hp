@@ -61,7 +61,7 @@ const shrinkElements = document.querySelectorAll(".hoverShrink");
   var bounce = gsap.to(mapIcon, {
     paused: true,
     duration: .1,
-    y: 80,
+    y: -35,
     ease: "circ.in"
   });
 
