@@ -174,14 +174,12 @@ body a:hover, body a:focus, body a:active {
   }
 }
 .contact #locSVG {
-  position: absolute;
-  left: 0;
-  padding: 0 10em;
+  background-image: url("../img/location.png");
+  background-size: cover;
 }
-@media screen and (max-width: 768px) {
-  .contact #locSVG {
-    padding: 0 2em;
-  }
+.contact #locSVG-small {
+  background-image: url("../img/location-small.png");
+  background-size: cover;
 }
 
 #metallzert {
@@ -240,36 +238,37 @@ body a:hover, body a:focus, body a:active {
   height: 110px;
 }
 
-.expandOnSmall {
+.social-footer .expandOnSmall {
   position: fixed;
   bottom: 60px;
   height: 13vh;
   width: 100%;
+  z-index: 80;
   background-color: var(--transparent_white);
   box-shadow: var(--vertical-dropshadow-up);
 }
-.expandOnSmall .social-symbols {
+.social-footer .expandOnSmall .social-symbols {
   position: absolute;
   top: 50%;
   left: 15%;
   transform: translate(-50%, -50%) !important;
   z-index: 70;
 }
-.expandOnSmall .social-symbols #facebook-icon, .expandOnSmall .social-symbols #instagram-icon {
+.social-footer .expandOnSmall .social-symbols #facebook-icon, .social-footer .expandOnSmall .social-symbols #instagram-icon {
   position: relative;
   left: 10%;
   height: 4em;
 }
-.expandOnSmall .social-symbols #facebook-icon:hover, .expandOnSmall .social-symbols #instagram-icon:hover {
+.social-footer .expandOnSmall .social-symbols #facebook-icon:hover, .social-footer .expandOnSmall .social-symbols #instagram-icon:hover {
   filter: brightness(0.7);
 }
-.expandOnSmall .social-symbols #follow-us-2 {
+.social-footer .expandOnSmall .social-symbols #follow-us-2 {
   position: relative;
   height: 2em;
   left: 10%;
   padding: 0 0.5em 0 1em;
 }
-.expandOnSmall #isocert-icon-small {
+.social-footer .expandOnSmall #isocert-icon-small {
   height: 6em;
   padding: 0.2em 2em 0.2em 0;
   position: absolute;
@@ -277,7 +276,7 @@ body a:hover, body a:focus, body a:active {
   left: 90%;
   transform: translate(-50%, -50%) !important;
 }
-.expandOnSmall #isocert-icon-small:hover {
+.social-footer .expandOnSmall #isocert-icon-small:hover {
   filter: brightness(3);
 }
 

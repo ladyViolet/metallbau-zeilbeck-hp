@@ -200,14 +200,15 @@ body {
     }
 
     #locSVG {
-       position: absolute;
-       left: 0;
-       padding: 0 10em;
-
-       @media screen and (max-width: 768px) {
-        padding: 0 2em;
-       }
+       background-image: url("../img/location.png");
+       background-size: cover;
     }
+
+    #locSVG-small {
+        background-image: url("../img/location-small.png");
+        background-size: cover;
+    } 
+
 }
 
 //ISOCERT PAGE
@@ -273,49 +274,52 @@ body {
 }
 
 //MOBILE BEHAVIOUR
-.expandOnSmall {
-    position: fixed;
-    bottom: 60px;
-    height: 13vh;
-    width: 100%;
-    background-color: var(--transparent_white);
-    box-shadow: var(--vertical-dropshadow-up);
-
-    .social-symbols {
-        position: absolute;
-        top: 50%;
-        left: 15%;
-        transform: translate(-50%, -50%) !important;
-        z-index: 70;
-
-        #facebook-icon, #instagram-icon {
-            position: relative;
-            left: 10%;
-            height: 4em;
-
-            &:hover {
-                filter: brightness(.7);
+.social-footer {
+    .expandOnSmall {
+        position: fixed;
+        bottom: 60px;
+        height: 13vh;
+        width: 100%;
+        z-index: 80;
+        background-color: var(--transparent_white);
+        box-shadow: var(--vertical-dropshadow-up);
+    
+        .social-symbols {
+            position: absolute;
+            top: 50%;
+            left: 15%;
+            transform: translate(-50%, -50%) !important;
+            z-index: 70;
+    
+            #facebook-icon, #instagram-icon {
+                position: relative;
+                left: 10%;
+                height: 4em;
+    
+                &:hover {
+                    filter: brightness(.7);
+                }
+            }
+    
+            #follow-us-2 {
+                position: relative;
+                height: 2em;
+                left: 10%;
+                padding: 0 .5em 0 1em;
             }
         }
-
-        #follow-us-2 {
-            position: relative;
-            height: 2em;
-            left: 10%;
-            padding: 0 .5em 0 1em;
-        }
-    }
-
-    #isocert-icon-small {
-        height: 6em;
-        padding: .2em 2em .2em 0;
-        position: absolute;
-        top: 50%;
-        left: 90%;
-        transform: translate(-50%, -50%) !important;
-
-        &:hover {
-            filter: brightness(3);
+    
+        #isocert-icon-small {
+            height: 6em;
+            padding: .2em 2em .2em 0;
+            position: absolute;
+            top: 50%;
+            left: 90%;
+            transform: translate(-50%, -50%) !important;
+    
+            &:hover {
+                filter: brightness(3);
+            }
         }
     }
 }
