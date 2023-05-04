@@ -181,6 +181,9 @@ body a:hover, body a:focus, body a:active {
   background-image: url("../img/location-small.png");
   background-size: cover;
 }
+.contact .fa {
+  margin-right: 5px;
+}
 
 #metallzert {
   width: 80vw;
