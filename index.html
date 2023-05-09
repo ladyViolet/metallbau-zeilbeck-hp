@@ -8,11 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!--TODO favicon <link rel="icon" type="i" href="favicon.ico"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link href=" https://cdn.jsdelivr.net/npm/pdfjs-dist@3.4.120/web/pdf_viewer.min.css " rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/layout.css">
 </head>
@@ -64,7 +62,7 @@
         
         <!--main content area-->
         <!--HOME-->
-        <section class="content-element home" id="home">
+        <section class="content-element home hidden" id="home">
             <div class="teaser-text">
                 <img src="img/teaser-container.svg" alt="">
             </div>  
@@ -92,9 +90,112 @@
          </section>
 
           <!--JOBS-->
-        <section class="content-element jobs hidden" id="jobs">
+        <section class="content-element jobs" id="jobs">
             <div class="textcontainer">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Wir stellen ein</h2>
+                        <p><strong><i class="fa fa-chevron-right list-arrow"></i>Metallbauermeister</strong> m/w/d</p>
+                        <p><strong><i class="fa fa-chevron-right list-arrow"></i>Metallbauer Fachrichtung Konstruktionstechnik</strong> m/w/d</p>
+                        <p><strong><i class="fa fa-chevron-right list-arrow"></i>Schweißer WIG/MAG</strong> m/w/d</p>
+                    </div>
+
+                   <div class="col-md-6">
+                        <h2>Wir bilden aus</h2>
+                        <p><strong><i class="fa fa-chevron-right list-arrow"></i>Metallbauer Fachrichtung Konstruktionstechnik</strong> m/w/d</p>
+                   </div>
+                    
+                </div>
                 
+                <div class="textdivider">jetzt bewerben</div>
+                <i class="fa fa-chevron-down bouncing-arrow" id="bouncing-arrow-1"></i>
+                <i class="fa fa-chevron-down bouncing-arrow" id="bouncing-arrow-2"></i>
+
+                
+                <form action="action_page.php">
+                    <div class="form-group col-md-12">
+                        <label for="job-type">Stellenbezeichnung<span class="asterisk">*</span></label>
+                        <select class="gray-underlay" id="job-type" name="Stellenbezeichnung">
+                            <option value="Metallbauermeister">Metallbauermeister m/w/d</option>
+                            <option value="Metallbauer Konstruktionstechnik">Metallbauer Fachrichtung Konstruktionstechnik m/w/d</option>
+                            <option value="Schweißer">Schweißer WIG/MAG m/w/d</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="fname">Vorname<span class="asterisk">*</span></label>
+                            <input class="gray-underlay" type="text" id="fname" name="firstname" placeholder="Vorname(n)">  
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lname">Nachname<span class="asterisk">*</span></label>
+                            <input class="gray-underlay" type="text" id="lname" name="lastname" placeholder="Nachname">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="street">Straße<span class="asterisk">*</span></label>
+                            <input class="gray-underlay" type="text" id="street" name="street" placeholder="Straße">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="apt-no">Hausnummer<span class="asterisk">*</span></label>
+                            <input class="gray-underlay" type="text" id="apt-no" name="apartment-nr" placeholder="Hausnummer">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="zip-code">Postleitzahl<span class="asterisk">*</span></label>
+                            <input class="gray-underlay" type="text" id="zip-code" name="zipcode" placeholder="Postleitzahl">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="city">Ort<span class="asterisk">*</span></label>
+                            <input class="gray-underlay" type="text" id="city" name="city" placeholder="Ort">
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-12">
+                      <label for="country">Land<span class="asterisk">*</span></label>
+                      <input class="gray-underlay" type="text" id="country" name="country" placeholder="Land">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="mail">Emailadresse<span class="asterisk">*</span></label>
+                            <input class="gray-underlay" type="text" id="mail" name="mail" placeholder="Emailadresse">
+                         </div>
+                         <div class="form-group col-md-6">
+                            <label for="lname">Telefonnummer<span class="asterisk">*</span></label>
+                            <input class="gray-underlay" type="text" id="lname" name="lastname" placeholder="Telefonnummer">
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-12">
+                      <label for="subject">Anschreiben</label>
+                      <textarea class="gray-underlay" id="subject" name="subject" placeholder="Fügen Sie hier Ihr Bewerbungsanschreiben ein.." style="height:200px"></textarea>
+                    </div>
+
+                    <div class="form-group col-md-12">
+                            <label for="data-upload">Dateiupload<span class="asterisk">*</span></label>
+                            <p>Um die Bewerbung abzuschließen, senden Sie uns bitte Ihren Lebenslauf als PDF zu.</p>
+                            <input type="file" id="fileupload" name="filename">
+                    </div>
+
+                    <div class="form-group col-md-12">
+                        <label class="form-check-label" for="invalidCheck3">
+                        Datenschutzrichtlinie<span class="asterisk">*</span>
+                        </label>
+                        <div>
+                            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+                            Mit der Verarbeitung der im Kontaktformular angegebenen personenbezogen Daten zum Zwecke der Kontaktaufnahme durch Metallbau Zeilbeck bin ich einverstanden. Nähere Informationen zur Datenverarbeitung finden Sie in unserer Datenschutzerklärung.
+                        </div>
+                        <div class="invalid-feedback">
+                            <span class="asterisk">*</span>Die Datenschutzerklärung muss zur Übermittlung der Daten akzeptiert werden.
+                        </div>
+                    </div>
+                    <button class="roundedge-button">Absenden</button>
+                </form>
             </div>
         </section>
         
@@ -182,9 +283,11 @@
                         93326 Abensberg<br>
                         Deutschland
                     </address>
-                    <p><i class="fa fa-phone fa-lg" aria-hidden="true"></i><a href="tel: 499443905510"> +49 9443 905510</a><br>
+                    <p>
+                        <i class="fa fa-phone fa-lg" aria-hidden="true"></i><a href="tel: 499443905510"> +49 9443 905510</a><br>
                         <i class="fa fa-envelope fa-lg" aria-hidden="true"></i><a href="mailto:info@metallbau-zeilbeck.de"> info@metallbau-zeilbeck.de</a><br>
-                        <i class="fa fa-globe fa-lg" aria-hidden="true"></i> <a href="https://www.metallbau-zeilbeck.de/" target="_blank"> https://www.metallbau-zeilbeck.de/</a></p>
+                        <i class="fa fa-globe fa-lg" aria-hidden="true"></i> <a href="https://www.metallbau-zeilbeck.de/" target="_blank"> https://www.metallbau-zeilbeck.de/</a>
+                    </p>
                     
             </div>
 

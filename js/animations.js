@@ -80,6 +80,18 @@ const shrinkElements = document.querySelectorAll(".hoverShrink");
     }).play();
   }
 
+  var bounceArrow = gsap.to(".bouncing-arrow", {
+    paused: true,
+    y: 5,
+    repeat: -1,
+    duration: 1,
+    stagger: {
+      each: 0.2,
+      from: 1,
+      ease:"power2.inOut" 
+    }
+  });
+
 //INIT
 window.onload = function()
 {
@@ -88,7 +100,6 @@ window.onload = function()
         shrinkElements[x].addEventListener("mouseenter", () => playHoverShrink(x));
         shrinkElements[x].addEventListener("mouseleave", () => reverseHoverShrink(x));
     }
-    delayedLoad(mapIcon);
     contact.addEventListener("click", () => delayedLoad(mapIcon));
     mapIcon.addEventListener("mouseenter", () => bounce.play());
     mapIcon.addEventListener("mouseleave", () => bounce.reverse());
@@ -96,4 +107,10 @@ window.onload = function()
     mapIconSmall.addEventListener("mouseenter", () => bounceSmall.play());
     mapIconSmall.addEventListener("mouseleave", () => bounceSmall.reverse());
     tlOnLoad.play();
+    bounceArrow.play();
 }
+
+//TODO: mobile menu behaviour - close after item click and darken body if menu is open
+/*
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+*/

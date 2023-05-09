@@ -117,8 +117,68 @@ body {
 }
 
 //MAIN-AREA
+//BUTTONS, FORM, etc..
+.roundedge-button {
+    background-color: var(--telemagenta);
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border-radius: 8px;
+    box-shadow: var(--vertical-dropshadow-down);
+}
+
+hr.solid {
+    border-top: 3px solid var(--telemagenta);
+}
+
+.textdivider {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: var(--grey);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 3em;
+
+    &::before, &::after {
+        flex: 1;
+        content: '';
+        padding: 1px;
+        background-color: var(--telemagenta);
+        margin: 10px;
+    }
+}
+
+.list-arrow {
+    color: var(--telemagenta);
+    margin-right: 5px;
+}
+
+.gray-underlay {
+    background-color: #898d8d48;
+    padding: 15px;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    border: none;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.asterisk {
+    color: var(--telemagenta);
+}
+
 //HOME
-.home, .impressum, .datasec, .contact {
+.home, .impressum, .datasec, .contact, .jobs {
     position: relative;
     padding-top: 100px;
     
@@ -145,11 +205,41 @@ body {
     }
 }
 
-.impressum, .datasec, .contact {
+.impressum, .datasec, .contact, .jobs {
     padding-bottom: 8vh;
 
     @media screen and (max-width: 768px) {
      padding-bottom: 22vh;
+    }
+}
+
+//JOBS
+.jobs {
+    .bouncing-arrow {
+        display: block;
+        margin: 0 auto;
+        font-size: 1.5em;
+        color: var(--telemagenta);
+        text-align: center;
+    }   
+    
+    #bouncing-arrow-2 {
+        margin-top: -.6em;
+        margin-bottom: 2em;
+    }
+    
+    input.form-check-input {
+        margin-right: 5px;
+    }
+    
+    .invalid-feedback {
+        color: rgb(255, 53, 53);
+        margin-top: 5px;
+    }
+
+    .roundedge-button {
+        width: 100%;
+        margin-top: 1em !important;
     }
 }
 
@@ -163,8 +253,10 @@ body {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
     h2 {
-        font-weight: 500;
+
+        font-family: 'Source Sans Pro', sans-serif;
         color: var(--telemagenta);
+        margin-bottom: .5em;
     }
 
 
@@ -211,6 +303,7 @@ body {
 
     .fa {
         margin-right: 5px;
+        color: var(--telemagenta);
     }
 
 }
