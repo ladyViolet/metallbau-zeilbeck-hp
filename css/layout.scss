@@ -98,7 +98,8 @@ body {
 
     .navbar-toggle {
         background-color: white;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;        height: 40px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;        
+        height: 40px;
         top: 20%;
         z-index: 1100;
         
@@ -178,7 +179,7 @@ input[type=text], select, textarea {
 }
 
 //HOME
-.home, .impressum, .datasec, .contact, .jobs {
+.home, .about, .products, .references, .jobs, .impressum, .datasec, .contact {
     position: relative;
     padding-top: 100px;
     

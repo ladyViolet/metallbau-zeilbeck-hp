@@ -159,11 +159,11 @@ input[type=text], select, textarea {
   color: var(--telemagenta);
 }
 
-.home, .impressum, .datasec, .contact, .jobs {
+.home, .about, .products, .references, .jobs, .impressum, .datasec, .contact {
   position: relative;
   padding-top: 100px;
 }
-.home .teaser-text, .impressum .teaser-text, .datasec .teaser-text, .contact .teaser-text, .jobs .teaser-text {
+.home .teaser-text, .about .teaser-text, .products .teaser-text, .references .teaser-text, .jobs .teaser-text, .impressum .teaser-text, .datasec .teaser-text, .contact .teaser-text {
   height: 60vh;
   z-index: 60;
   left: 30%;
@@ -171,11 +171,11 @@ input[type=text], select, textarea {
   transform: translate(-30%, -50%);
   position: absolute;
 }
-.home .teaser-text img, .impressum .teaser-text img, .datasec .teaser-text img, .contact .teaser-text img, .jobs .teaser-text img {
+.home .teaser-text img, .about .teaser-text img, .products .teaser-text img, .references .teaser-text img, .jobs .teaser-text img, .impressum .teaser-text img, .datasec .teaser-text img, .contact .teaser-text img {
   height: 100%;
 }
 @media screen and (max-width: 900px) {
-  .home .teaser-text, .impressum .teaser-text, .datasec .teaser-text, .contact .teaser-text, .jobs .teaser-text {
+  .home .teaser-text, .about .teaser-text, .products .teaser-text, .references .teaser-text, .jobs .teaser-text, .impressum .teaser-text, .datasec .teaser-text, .contact .teaser-text {
     height: 50vh;
     top: 42vh;
     left: 50%;
