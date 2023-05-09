@@ -126,7 +126,7 @@ hr.solid {
   display: flex;
   align-items: center;
   text-align: center;
-  margin-top: 3em;
+  margin-top: 2em;
 }
 .textdivider::before, .textdivider::after {
   flex: 1;
@@ -192,6 +192,9 @@ input[type=text], select, textarea {
   }
 }
 
+.jobs .job-type {
+  margin-left: 0.8em;
+}
 .jobs .bouncing-arrow {
   display: block;
   margin: 0 auto;
