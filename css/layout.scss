@@ -274,7 +274,7 @@ input[type=text], select, textarea {
     @media screen and (max-width: 768px) {
         margin: 2em;
         padding: 5%;
-       }
+    }
 }
 
 //KONTAKT
@@ -448,6 +448,10 @@ input[type=text], select, textarea {
     
         a {
             padding: 0 3vw;
+        }   
+        
+        @media screen and (max-width: 768px) {
+            font-size: 1em;
         }
     }
 
@@ -464,6 +468,12 @@ input[type=text], select, textarea {
         text-align: center;
         color: var(--lightgrey);
         padding-top: .2em;
+
+        @media screen and (max-width: 768px) {
+            font-size: .7em;
+        }
     }
+
+
 }
 

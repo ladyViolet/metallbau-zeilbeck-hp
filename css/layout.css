@@ -392,6 +392,11 @@ input[type=text], select, textarea {
 .footer .footer-links a {
   padding: 0 3vw;
 }
+@media screen and (max-width: 768px) {
+  .footer .footer-links {
+    font-size: 1em;
+  }
+}
 .footer a:hover {
   color: var(--telemagenta);
   text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
@@ -404,4 +409,9 @@ input[type=text], select, textarea {
   text-align: center;
   color: var(--lightgrey);
   padding-top: 0.2em;
+}
+@media screen and (max-width: 768px) {
+  .footer .copyright {
+    font-size: 0.7em;
+  }
 }/*# sourceMappingURL=layout.css.map */

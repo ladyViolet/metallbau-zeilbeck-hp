@@ -63,7 +63,6 @@ function toggle(item) {
     }
 }
 
-
 collapseItems900(break900); 
 collapseItems768(break768);
 collapseItems455(break455);
