@@ -379,7 +379,7 @@ input[type=text], select, textarea {
     .expandOnSmall {
         position: fixed;
         bottom: 60px;
-        height: 13vh;
+        height: 10vh;
         width: 100%;
         z-index: 80;
         background-color: var(--transparent_white);
@@ -387,6 +387,8 @@ input[type=text], select, textarea {
     
         .social-symbols {
             position: absolute;
+            height: 80%;
+            padding: 3px;
             top: 50%;
             left: 15%;
             transform: translate(-50%, -50%) !important;
@@ -395,7 +397,7 @@ input[type=text], select, textarea {
             #facebook-icon, #instagram-icon {
                 position: relative;
                 left: 10%;
-                height: 4em;
+                height: 100%;
     
                 &:hover {
                     filter: brightness(.7);
@@ -404,15 +406,15 @@ input[type=text], select, textarea {
     
             #follow-us-2 {
                 position: relative;
-                height: 2em;
+                height: 50%;
                 left: 10%;
                 padding: 0 .5em 0 1em;
             }
         }
     
         #isocert-icon-small {
-            height: 6em;
-            padding: .2em 2em .2em 0;
+            height: 100%;
+            padding: 3px 2em 3px 0;
             position: absolute;
             top: 50%;
             left: 90%;
