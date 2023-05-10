@@ -98,6 +98,7 @@ body a:hover, body a:focus, body a:active {
   right: 0;
   padding-top: 70px;
   background-color: var(--transparent_white);
+  box-shadow: var(--vertical-dropshadow-down);
   height: 100vh;
 }
 
