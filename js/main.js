@@ -50,11 +50,18 @@ function expandItems768(break768) {
 };
 
 const contentElements = document.getElementsByClassName("content-element");
+const navItems = document.getElementsByClassName("nav-item");
 
 function toggle(item) {
+    if (item == "impressum" || item == "contact" || item == "datasec") {
+        for (var i = 0; i < navItems.length; i++) {
+            navItems[i].classList.remove("active");
+        }
+    }
+
     for (var i = 0; i < contentElements.length; i++) {
         console.log(item);
-        console.log(contentElements[i].id);
+        //console.log(contentElements[i].id);
         if (contentElements[i].id != item) {
             contentElements[i].classList.add("hidden");
         }else{
