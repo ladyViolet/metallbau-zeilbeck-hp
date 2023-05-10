@@ -193,6 +193,10 @@ input[type=text], select, textarea {
   }
 }
 
+.jobs #announcement {
+  margin-top: 2em;
+  color: var(--grey);
+}
 .jobs .job-type {
   margin-left: 0.8em;
 }

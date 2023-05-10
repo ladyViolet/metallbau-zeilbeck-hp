@@ -217,6 +217,11 @@ input[type=text], select, textarea {
 
 //JOBS
 .jobs {
+    #announcement {
+        margin-top: 2em;
+        color: var(--grey);
+    }
+
     .job-type {
         margin-left: .8em;
     }
