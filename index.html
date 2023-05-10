@@ -90,7 +90,63 @@
          <section class="content-element references hidden" id="references">
             <div class="textcontainer">
                 <h2>Referenzen</h2>
-                <p>coming soon..</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>DEMOS Alexis</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse fugiat et labore modi? Illo maiores earum temporibus cumque possimus.</p>
+                    </div>
+                    <div class="col-md-8">
+                         <!-- Container for the image gallery -->
+                        <div class="container">
+
+                            <!-- Full-width images with number text -->
+                            <div class="mySlides">
+                            <div class="numbertext">1 / 4</div>
+                                <img src="img/references/references-1.1.jpeg">
+                            </div>
+                        
+                            <div class="mySlides">
+                            <div class="numbertext">2 / 4</div>
+                                <img src="img/references/references-1.2.jpeg">
+                            </div>
+                        
+                            <div class="mySlides">
+                            <div class="numbertext">3 / 4</div>
+                                <img src="img/references/references-1.3.jpeg">
+                            </div>
+                        
+                            <div class="mySlides">
+                            <div class="numbertext">4 / 4</div>
+                                <img src="img/references/references-1.4.jpeg">
+                            </div>
+                        
+                            <!-- Next and previous buttons -->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        
+                            <!-- Image text -->
+                            <div class="caption-container">
+                            <p id="caption"></p>
+                            </div>
+                        
+                            <!-- Thumbnail images -->
+                            <div class="row">
+                            <div class="column">
+                                <img class="demo cursor" src="img/references/references-1.1.jpeg" onclick="currentSlide(1)" alt="DEMOS Alexis-1">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="img/references/references-1.2.jpeg" onclick="currentSlide(2)" alt="DEMOS Alexis-2">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="img/references/references-1.3.jpeg" onclick="currentSlide(3)" alt="DEMOS Alexis-3">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="img/references/references-1.4.jpeg" onclick="currentSlide(4)" alt="DEMOS Alexis-4">
+                            </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
             </div>
          </section>
 
@@ -383,6 +439,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/slideshow.js"></script>
     <script src="js/animations.js"></script>
     <script>
         $(document).ready(function() {
